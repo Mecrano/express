@@ -1,0 +1,84 @@
+/* Header Inicio */
+.menu-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 3rem 0;
+    border-bottom: 0.1rem solid #e1e1e1;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.derecha {
+    display: flex;
+    align-items: center;
+}
+
+.derecha > div {
+    margin-right: 20px;
+}
+
+.menu-inferior {
+    justify-content: center;
+    position: relative;
+    display: flex;
+    padding: 2.25rem;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.25em;
+    text-transform: uppercase;
+}
+
+.menu-inferior > div {
+    margin-right: 20px;
+}
+
+.menu-carrito {
+    display: none;
+    position: absolute;
+    top: 68px;
+    right: 0;
+    z-index: 2;
+    width: 30%;
+    max-width: 414px;
+    min-width: 200px;
+    background: rgba(202, 64, 195, 0.664);
+    height: calc(100% - 68px);
+    text-align: center;
+}
+
+.menu-lupa {
+    display: none;
+    position: absolute;
+    top: 68px;
+    right: 0;
+    z-index: 2;
+    width: 30%;
+    max-width: 414px;
+    min-width: 200px;
+    background: rgba(235, 102, 13, 0.664);
+    height: calc(100% - 68px);
+    text-align: center;
+
+    
+}
+
+.menu-mi-cuenta {
+    display: none;
+    position: absolute;
+    top: 68px;
+    right: 0;
+    z-index: 2;
+    width: 30%;
+    max-width: 414px;
+    min-width: 200px;
+    background: rgba(92, 187, 155, 0.664);
+    height: calc(100% - 68px);
+    text-align: center;
+
+    
+}
+
+/* Header Fin */
