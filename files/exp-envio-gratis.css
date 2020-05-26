@@ -1,0 +1,192 @@
+.menu_superior{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 3rem 0;
+    border-bottom: 0.1rem solid #e1e1e1;
+    font-family: Helvetica, Arial, sans-serif;
+  
+  }
+  .izquierda{
+      flex: 1;
+  }
+  
+  .logo_express_centro{
+      flex:1;
+      text-align: center;
+  }
+  
+  .menu_inferior{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu_inferior > div{
+    margin-right: 40px;
+  }
+  
+  .Iconos_derecha{
+      display: flex;
+      justify-content: flex-end;
+      flex: 1;
+     
+  }
+  
+  .Iconos_derecha > div{
+      margin-right: 20px; 
+  
+  }
+  
+  
+  
+  .exp_letra{
+      font-size: larger;
+      font-family: 'Lato', sans-serif;
+  }
+  
+  .menu-lupa, .menu-carrito{
+      display: block;
+      position: absolute;
+      top: 68px;
+      right: 0;
+      z-index: 1;
+      width: 30%;
+      max-width: 414px;
+      min-width: 200px;
+      background: red;
+      height: calc(100% - 68px);
+      text-align: center;
+  }
+  
+   /* Navbar container */
+   .menu_inferior {
+      overflow: hidden;
+      background-color: #fffdfd;
+      font-family: Arial;
+    }
+    
+    /* Links inside the navbar */
+    .menu_inferior a {
+      float: left;
+      font-size: 16px;
+      color: #fffdfd;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    /* The dropdown container */
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    
+    /* Dropdown button */
+    .dropdown .dropbtn {
+      font-size: 5px;
+      border: none;
+      outline: none;
+      color:black;
+      padding: 14px 16px;
+      background-color: inherit;
+      font: inherit; /* Important for vertical align on mobile phones */
+      margin: 0; /* Important for vertical align on mobile phones */
+      position: relative;
+    }
+  
+    
+    .dropdown .dropbtn:after{
+      content: "";
+      display: block;
+      height: 3px;
+      background: black;
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      right: 50%;
+      transition: all .4s ease;
+    }
+  
+    .dropdown .dropbtn:hover:after{
+      left: 0;
+      right: 0;
+    }
+    
+      /* Add a red background color to navbar links on hover */
+      .menu_inferior a:hover, .dropdown:hover .dropbtn {
+      background-color: #fffdfd;
+    }
+    
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      /*display: none;
+      position: absolute;
+      background-color: #fffdfd;
+      width: 100%;
+      left: 0;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.0);
+      z-index: 1;
+    */
+      max-height: 0rem;
+      overflow: hidden;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      transition: max-height .3s ease;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.0.2);
+      opacity: 0;
+  
+  
+    }
+    
+    /* Mega Menu header, if needed */
+    .dropdown-content .header {
+      background: #fffdfd;
+      padding: 5px;
+      color: rgb(8, 8, 8);
+    }
+    
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      max-height: 30rem;
+      transition: max-height .5s ease;
+      opacity: 1;
+  
+      /*display: block;*/
+    }
+    
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      flex: 1;
+      width: 33.33%;
+      padding: 10px;
+      background-color: #fffdfd;
+      height: 250px;
+    }
+    
+    /* Style links inside the columns */
+    .column a{
+      float: none;
+      color: black;
+      padding: 5px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    /* Add a background color on hover */
+    .column a:hover {
+      background-color: #fffdfd;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    } 
+  
+    .row{
+      display: flex;
+    }
