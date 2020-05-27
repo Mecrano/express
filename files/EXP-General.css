@@ -18,10 +18,19 @@
     src: url("../arquivos/ExpressSans-RegCond.woff.css") format("woff");
 }
 
+html,
 body {
     font-size: 10px;
     margin: 0;
 }
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
 .msg_superior {
     padding: 1rem;
 }
@@ -97,7 +106,7 @@ body {
     text-decoration: none;
     border: none;
     outline: none;
-    padding: 22.5rem;
+    padding: 2.25rem;
     color: #17171d;
     background-color: inherit;
     font: inherit; /* Important for vertical align on mobile phones */
@@ -117,19 +126,10 @@ body {
     text-decoration: none;
     background-color: transparent;
     background-image: none;
-    color: rgba(92, 87, 87, 0.384);
 }
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
-    /* display:none;
-  position: absolute;
-  background-color: #f9f9f9;
-  width: 100%;
-  left: 0;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-*/
-
     max-height: 0rem;
     overflow: hidden;
     position: absolute;
@@ -138,14 +138,21 @@ body {
     transition: max-height 0.3s ease;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     opacity: 0;
+    background: white;
+}
+
+
+.dropdown-content .row {
+    display: flex;
+    justify-content: center;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-    max-height: 30rem;
+    max-height: fit-content;
     transition: max-height 0.5s ease;
     opacity: 1;
-    /*display: block; */
+    padding: 3rem;
 }
 
 /* Create three equal columns that floats next to each other */
@@ -181,6 +188,7 @@ body {
     line-height: 1.25em;
     text-transform: uppercase;
     text-align: left;
+    margin-top: 0;
 }
 
 /* Add a background color on hover */
@@ -202,14 +210,11 @@ body {
     flex: 1;
     background-color: #fff;
     text-align: center;
-}
-.column-img {
-    flex: 1;
-    padding-top: 1.5rem;
     position: relative;
     text-align: center !important;
     text-transform: uppercase;
     color: #696969;
+    max-width: 26rem;
 }
 .link-img {
     margin-top: 1rem;
@@ -258,9 +263,7 @@ body {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
-.dropbtn:hover:before,
-.dropbtn:focus:before,
-.dropbtn:active:before,
+.dropdown.active .dropbtn:before,
 .logo-lupa:hover:before,
 .logo-lupa:focus:before,
 .logo-lupa:active:before,
@@ -281,7 +284,7 @@ body {
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 2; /* Stay on top */
-    top: 5.6rem; /* Stay at the top */
+    top: 6.8rem; /* Stay at the top */
     right: 0;
     background-color: #fff; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
@@ -328,10 +331,15 @@ body {
     position: absolute;
     visibility: hidden;
     background-color: #17171d;
-    top: 5.6rem; /* Stay at the top */
+    top: 6.8rem; /* Stay at the top */
     height: 100%;
     width: 100%;
     opacity: 0.2;
-    transition: visibility 0.3s linear;
+    transition: none;
     z-index: 1;
+}
+
+.background-opaco.active {
+    visibility: visible;
+    transition: visibility 0.3s linear;
 }
