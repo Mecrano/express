@@ -320,3 +320,12 @@ position: relative;
   padding-left: 3rem;
 
 }
+
+.background-opaco{
+  visibility:hidden;
+  color: #17171d;
+  height: 100%-5.6rem;;
+  width: 0; 
+  top: 5.6rem;
+  z-index: 1;
+}
