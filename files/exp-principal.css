@@ -19,6 +19,11 @@
 .menu_inferior{
   display: flex;
   justify-content: center;
+  font-style: normal;
+  letter-spacing: 0;
+
+  border-bottom: .1rem solid #e1e1e1;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .menu_inferior > div{
@@ -26,18 +31,18 @@
 }
 
 .Iconos_derecha{
+    flex: 1;
     display: flex;
     justify-content: flex-end;
-    flex: 1;
+    
    
 }
 
 .Iconos_derecha > div{
     margin-right: 20px; 
+    text-align: center;
 
 }
-
-
 
 .exp_letra{
     font-size: larger;
@@ -45,17 +50,50 @@
 }
 
 .menu-lupa, .menu-carrito{
-    display: block;
-    position: absolute;
-    top: 68px;
-    right: 0;
-    z-index: 1;
-    width: 30%;
-    max-width: 414px;
-    min-width: 200px;
-    background: red;
-    height: calc(100% - 68px);
-    text-align: center;
+  display: none;
+  position: absolute;
+  top: 68px;
+  right: 0;
+  z-index: 2;
+  width: 30%;
+  max-width: 414px;
+  min-width: 200px;
+  height: calc(100% - 68px);
+  text-align: center;
+  background-color:#FFF ;
+  transition: max-with .5s ease;
+  /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.0.2);*/
+
+}
+
+.logo-lupa:hover .menu-lupa {
+  display: block;
+}
+
+.logo-carrito:hover .menu-carrito {
+  /*max-width:  30rem;*/
+  display: block;
+}
+
+.text-menu-lateral{
+  flex: 1;
+  float: left;
+  text-align: left;
+  text-decoration: none;
+  display: flex;
+  justify-content: left;
+  font-size: 5px;
+  font-weight: normal;
+  border: none;
+  outline: none;
+  color:black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  position: relative;
+  letter-spacing: 0;
+
 }
 
  /* Navbar container */
@@ -74,7 +112,7 @@
     padding: 14px 16px;
     text-decoration: none;
   }
-  
+
   /* The dropdown container */
   .dropdown {
     float: left;
@@ -189,4 +227,33 @@
 
   .row{
     display: flex;
+  }
+
+  .img-mujer, .img-hombre{
+    width: 75%;
+    align-content: center;
+    height: inherit;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .img-jeans, .img-sale{
+    width: 58%;
+    align-content: center;
+    height: inherit;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .img-new{
+    width: 50%;
+    align-content: center;
+    height: inherit;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .logo-lupa:hover::before, .logo-lupa:focus:before, .logo-lupa:active:before{
+    left: 0;
+    right: 0;
   }
