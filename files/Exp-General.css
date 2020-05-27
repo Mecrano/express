@@ -32,6 +32,7 @@
     flex: 1;
     font-family:"express", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
+    padding-left: 2rem;
     color: #333;
    } 
 .izquierda a{
@@ -93,6 +94,7 @@ margin-right: 2em;
 /* The dropdown container */
 .dropdown {
   float: left;
+  
   overflow: hidden;
 }
 
@@ -101,7 +103,7 @@ margin-right: 2em;
   text-decoration: none;
   border: none;
   outline: none;
-  padding: 14px 16px;
+  padding: 28px 16px;
   color: #17171d;
   background-color: inherit;
   font: inherit;/* Important for vertical align on mobile phones */
@@ -157,7 +159,7 @@ margin-right: 2em;
 .column {
   float: left;
   flex: 1;
-  padding: 5px;
+  
   background-color: #FFF;
  
 }
@@ -168,7 +170,7 @@ margin-right: 2em;
   font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
   text-decoration: none;
   color: #747676;
-  padding: 5px 0px;
+  padding: 5px 40px;
   font-size: 14px;
   list-style: none;
   display: block;
@@ -183,6 +185,7 @@ margin-right: 2em;
   font-size: 13px;
   font-style: normal;
   font-weight: 600;
+  padding: 5px 40px;
   letter-spacing: 0;
   line-height: 1.25em;
   text-transform: uppercase;
@@ -275,7 +278,7 @@ position: relative;
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  z-index: 2; /* Stay on top */
   top: 5.6rem; /* Stay at the top */
   right: 0;
   background-color: #FFF; /* Black*/
@@ -322,10 +325,15 @@ position: relative;
 }
 
 .background-opaco{
+  position: absolute;
   visibility:hidden;
-  color: #17171d;
-  height: 100%-5.6rem;;
-  width: 0; 
-  top: 5.6rem;
+  background-color: #17171d;
+  top: 5.6rem; /* Stay at the top */
+  height: 100%;
+  width: 100%; 
+  opacity: 0.2;
+  transition:visibility 0.3s linear;
   z-index: 1;
 }
+
+
