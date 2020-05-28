@@ -1,8 +1,6 @@
 .menu_superior{
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 3rem 0;
   border-bottom: 0.1rem solid #e1e1e1;
   font-family: Helvetica, Arial, sans-serif;
 
@@ -35,7 +33,6 @@
     display: flex;
     justify-content: flex-end;
     
-   
 }
 
 .Iconos_derecha > div{
