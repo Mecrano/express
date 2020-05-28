@@ -137,4 +137,9 @@ $(document).ready(function () {
     // Solo activar en ambiente VTEX
     // crearCarrito()
     
+
+    $('#banners-principal').slick({
+        "autoplay": true,
+        "autoplaySpeed": 1500
+    });
 });
