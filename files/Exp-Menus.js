@@ -1,3 +1,32 @@
+const formatter = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+});
+
+function crearCarrito() {
+    vtexjs.checkout.getOrderForm().done(function (orderForm) {
+        $(".menu-carrito").append(
+            "<p>" +
+                "Subtotal: " +
+                formatter.format(orderForm.totalizers[0].value / 100) +
+                ", Total: " +
+                formatter.format(orderForm.value / 100) +
+            "</p>"
+        );
+        orderForm.items.forEach(function (item) {
+            $(".menu-carrito").append(
+                "<a href='" + item.detailUrl +"'>" +
+                    "<img src='" + item.imageUrl + "'>" +
+                    "<div>" +
+                        "Nombre: " + item.name + 
+                        ", Precio: " + formatter.format(item.sellingPrice / 100) +
+                        ", Cantidad: " + item.quantity +
+                    "</div>" +
+                "</a>"
+            );
+        });
+    });
+}
 $(document).ready(function () {
     $(".logo-lupa").hover(
         // Cuando entra el mouse
@@ -104,4 +133,8 @@ $(document).ready(function () {
             $(".menu-inferior").css("z-index", "1");
         }
     );
+
+    // Solo activar en ambiente VTEX
+    // crearCarrito()
+    
 });
