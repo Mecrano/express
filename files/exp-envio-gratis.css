@@ -19,20 +19,25 @@
   .menu_inferior{
     display: flex;
     justify-content: center;
+    font-style: normal;
+    letter-spacing: 0;
+  
+    border-bottom: .1rem solid #e1e1e1;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .menu_inferior > div{
     margin-right: 40px;
   }
   
-  .Iconos_derecha{
+  .derecha{
       display: flex;
       justify-content: flex-end;
       flex: 1;
      
   }
   
-  .Iconos_derecha > div{
+  .derecha > div{
       margin-right: 20px; 
   
   }
@@ -95,22 +100,7 @@
 }
 
 
-.dropdown .dropbtn:after{
-  content: "";
-  display: block;
-  height: 3px;
-  background: black;
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  right: 50%;
-  transition: all .4s ease;
-}
 
-.dropdown .dropbtn:hover:after{
-  left: 0;
-  right: 0;
-}
 
   /* Add a red background color to navbar links on hover */
   .menu_inferior a:hover, .dropdown:hover .dropbtn {
