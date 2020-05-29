@@ -248,7 +248,7 @@ html, body{
 }
 
 
-
+.dropbtn:before,
 .logo-lupa:before,
 .logo-mi-cuenta:before,
 .logo-carrito:before {
@@ -313,6 +313,20 @@ html, body{
   text-align: left;
 }
 
+.menu-mi-cuenta a{
+  float: none;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  color: #747676;
+  padding: 0.5rem 3rem;
+  font-size: 14px;
+  list-style: none;
+  background-color: transparent;
+  text-align: left;
+}
+
 .menu-lupa a:hover,
 .menu-mi-cuenta a:hover,
 .menu-carrito a:hover {
@@ -341,10 +355,36 @@ html, body{
   width: 100%;
   opacity: 0.2;
   transition: none;
-  z-index: 1;
+  z-index: -1;
 }
 
 .background-opaco.active {
   visibility: visible;
   transition: visibility 0.3s linear;
+}
+
+.miCuentabtn{
+  text-decoration: none;
+    border: none;
+    outline: none;
+    padding: 2.25rem;
+    color: #17171d;
+    background-color: inherit;
+    margin: 0; /* Important for vertical align on mobile phones */
+    letter-spacing: 0;
+    line-height: 1.25em;
+
+}
+
+.MyAccount_CardTittle .MyAccountAuxHelpTittle{
+  
+  font-family:Arial,Helvetica Neue,Helvetica,sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bolder;
+  color: #17171d;
+  letter-spacing: 0;
+  line-height: 1.25em;
+  text-transform: uppercase
+
 }

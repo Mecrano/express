@@ -1,206 +1,364 @@
-.menu_superior{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 3rem 0;
-    border-bottom: 0.1rem solid #e1e1e1;
-    font-family: Helvetica, Arial, sans-serif;
-  
-  }
-  .izquierda{
-      flex: 1;
-  }
-  
-  .logo_express_centro{
-      flex:1;
-      text-align: center;
-  }
-  
-  .menu_inferior{
-    display: flex;
-    justify-content: center;
-    font-style: normal;
-    letter-spacing: 0;
-  
-    border-bottom: .1rem solid #e1e1e1;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .menu_inferior > div{
-    margin-right: 40px;
-  }
-  
-  .derecha{
-      display: flex;
-      justify-content: flex-end;
-      flex: 1;
-     
-  }
-  
-  .derecha > div{
-      margin-right: 20px; 
-  
-  }
-  
-  
-  
-  .exp_letra{
-      font-size: larger;
-      font-family: 'Lato', sans-serif;
-  }
-  
-  .menu-lupa, .menu-carrito{
-      display: block;
-      position: absolute;
-      top: 68px;
-      right: 0;
-      z-index: 1;
-      width: 30%;
-      max-width: 414px;
-      min-width: 200px;
-      background: red;
-      height: calc(100% - 68px);
-      text-align: center;
-  }
-  
- /* Navbar container */
- .menu_inferior {
-  overflow: hidden;
-  background-color: #fffdfd;
-  font-family: Arial;
+@font-face {
+  font-family: 'express';
+  src: url('../arquivos/ES_Reg.woff.css') format('woff')
 }
 
-/* Links inside the navbar */
-.menu_inferior a {
-  float: left;
-  font-size: 16px;
-  color: #fffdfd;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+@font-face {
+  font-family: 'ExpressSansUltraCond';
+  src: url('../arquivos/ExpressSans-UltraCond.woff.css') format('woff')
+}
+
+@font-face {
+  font-family: 'express-sans-med';
+  src: url('../arquivos/ExpressSans-MedCond.woff.css') format('woff')
+}
+
+@font-face {
+  font-family: 'express-sans-reg';
+  src: url('../arquivos/ExpressSans-RegCond.woff.css') format('woff')
+}
+
+html, body{
+  font-size:  10px;
+  margin: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.msg_superior{
+  padding:  1rem;
+}
+
+.menu_superior{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1rem solid #e1e1e1;
+  font-family: Helvetica, Arial, sans-serif;
+  
+
+}
+
+.izquierda{
+    flex: 1;
+    font-family:"express", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    padding-left: 2rem;
+    color: #333;
+}
+
+.izquierda a{
+  color: #696969;
+}
+
+.centro{
+    flex:1;
+    text-align: center;
+}
+
+.derecha{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.derecha > div{
+    margin-right: 20px; 
+    text-align: center;
+
+}
+
+.menu-inferior {
+  justify-content: center;
+  position: relative;
+  display: flex;
+  flex-grow: 2;
+  border-bottom: 0.1rem solid #e1e1e1;
+}
+
+.menu-inferior > div {
+  height: 100%;
+  margin-right: 2em;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-bottom: 0.1rem solid #e1e1e1;
 }
 
 /* The dropdown container */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    padding: 2.25rem;
+    color: #17171d;
+    background-color: inherit;
+    font: inherit;/* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+    font-family:Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.25em;
+    text-transform: uppercase
+  }
 
-/* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 5px;
-  border: none;
-  outline: none;
-  color:black;
-  padding: 14px 16px;
-  background-color: inherit;
-  font: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-  position: relative;
-}
-
-
-
-
-  /* Add a red background color to navbar links on hover */
-  .menu_inferior a:hover, .dropdown:hover .dropbtn {
-  background-color: #fffdfd;
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  text-decoration: none;
+  background-color: transparent;
+  background-image: none;
 }
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
-  /*display: none;
-  position: absolute;
-  background-color: #fffdfd;
-  width: 100%;
-  left: 0;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.0);
-  z-index: 1;
-*/
   max-height: 0rem;
   overflow: hidden;
   position: absolute;
   left: 0;
   width: 100%;
-  transition: max-height .3s ease;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.0.2);
+  transition: max-height 0.3s ease;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   opacity: 0;
-
-
+  background: white;
 }
 
-/* Mega Menu header, if needed */
-.dropdown-content .header {
-  background: #fffdfd;
-  padding: 5px;
-  color: rgb(8, 8, 8);
+.dropdown-content .row {
+  display: flex;
+  justify-content: center;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-  max-height: 30rem;
-  transition: max-height .5s ease;
+  max-height: fit-content;
+  transition: max-height 0.5s ease;
   opacity: 1;
-
-  /*display: block;*/
+  padding: 3rem;
+  
 }
 
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
   flex: 1;
-  width: 33.33%;
-  padding: 10px;
-  background-color: #fffdfd;
-  height: 250px;
+
+  background-color: #fff;
 }
 
 /* Style links inside the columns */
-.column a{
+.column a {
   float: none;
-  color: black;
-  padding: 5px;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
   text-decoration: none;
+  color: #747676;
+  padding: 5px 40px;
+  font-size: 14px;
+  list-style: none;
   display: block;
+  background-color: transparent;
   text-align: left;
+}
+
+.column p {
+  color: #17171d;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  padding: 5px 40px;
+  letter-spacing: 0;
+  line-height: 1.25em;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 0;
 }
 
 /* Add a background color on hover */
 .column a:hover {
-  background-color: #fffdfd;
+  color: black;
+  background-color: transparent;
 }
-
+.row {
+  justify-content: space-between;
+  display: flex;
+}
 /* Clear floats after the columns */
 .row:after {
   content: "";
-  display: table;
   clear: both;
-} 
-
-.row{
-  display: flex;
 }
+  
+.column-img {
+  flex: 1;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  text-align: center !important;
+  text-transform: uppercase;
+  color: #696969;
+  max-width: 26rem;
+}  
 
-.img-mujer, .img-hombre{
+.link-img {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.link-img a {
+  text-align: center;
+  text-transform: uppercase;
+  color: #696969;
+  margin-top: 3rem;
+  font-size: 1.5rem
+}
+.img-menu {
   width: 75%;
-  align-content: center;
-  height: inherit;
-  object-fit: cover;
-  object-position: center center;
+  position: relative;
 }
 
-.img-jeans, .img-sale{
-  width: 58%;
-  align-content: center;
-  height: inherit;
-  object-fit: cover;
-  object-position: center center;
+/* Underline From Center */
+.dropbtn,
+.logo-lupa,
+.logo-mi-cuenta,
+.logo-carrito {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
 }
 
-.img-new{
-  width: 50%;
-  align-content: center;
-  height: inherit;
-  object-fit: cover;
-  object-position: center center;
+
+.dropbtn:before,
+.logo-lupa:before,
+.logo-mi-cuenta:before,
+.logo-carrito:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #000;
+    height: 2px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+.dropdown.active .dropbtn:before, 
+.logo-lupa:hover:before,
+.logo-lupa:focus:before,
+.logo-lupa:active:before,
+.logo-mi-cuenta:hover:before,
+.logo-mi-cuenta:focus:before,
+.logo-mi-cuenta:active:before,
+.logo-carrito:hover:before,
+.logo-carrito:focus:before,
+.logo-carrito:active:before {
+    left: 0;
+    right: 0;
+}
+
+.menu-lupa,
+.menu-mi-cuenta,
+.menu-carrito {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Stay on top */
+    top: 6.8rem; /* Stay at the top */
+    right: 0;
+    background-color: #fff; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 30px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* The navigation menu links */
+.menu-lupa a {
+  float: none;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  color: #747676;
+  padding: 0.5rem 3rem;
+  font-size: 14px;
+  list-style: none;
+  background-color: transparent;
+  text-align: left;
+}
+
+.menu-mi-cuenta a{
+  float: none;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  color: #747676;
+  padding: 0.5rem 3rem;
+  font-size: 14px;
+  list-style: none;
+  background-color: transparent;
+  text-align: left;
+}
+
+.menu-lupa a:hover,
+.menu-mi-cuenta a:hover,
+.menu-carrito a:hover {
+  color: #f1f1f1;
+}
+
+.menu-lupa p {
+  color: #17171d;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.25em;
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 3rem;
+}
+
+.background-opaco {
+  position: absolute;
+  visibility: hidden;
+  background-color: #17171d;
+  top: 6.8rem; /* Stay at the top */
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+  transition: none;
+  z-index: -1;
+}
+
+.background-opaco.active {
+  visibility: visible;
+  transition: visibility 0.3s linear;
 }
