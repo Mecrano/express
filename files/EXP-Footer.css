@@ -95,3 +95,6 @@ hi ::before{
 hi:first-child ::before{
     content: "";
 }
+colum.f-seccion ul.mini-menu {
+    margin-bottom: 30px;
+}
