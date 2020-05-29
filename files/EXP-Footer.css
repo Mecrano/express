@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'ExpressSansReg';
+    src: url('../arquivos/ES_Reg.woff.css') format('woff');
+}
+@font-face {
+    font-family: 'ExpressSansUltraCond';
+    src: url('../arquivos/ExpressSans-UltraCond.woff.css') format('woff');
+}
+@font-face {
+    font-family: 'ExpressRegular';
+    src: url('../arquivos/ES_Reg.woff.css') format('woff');
+}
+.footer-menu-principal {
+justify-content: center;
+position: relative;
+display: flex;
+flex-direction: row;
+padding-left: 4.5rem;
+padding-right: 4.5rem;
+padding-bottom: 2.5rem;
+font-size: 1.2rem;
+transition: margin-bottom 0.5s ease-out;
+font-family: "ExpressRegular", Arial, Helvetica, sans-serif;
+max-width: 100%;
+}
+/*.footer-contenido {
+    font-family: arial,hevetica,neue,sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    color: #17171d;
+}*/
+a {
+    color: #696969;
+    text-decoration: none;
+    transition: color 0.1s linear;
+    background-color: transparent;
+    font-family: arial,helveticaNeue,helvetica,sans-serif;
+    font-size: 0.9rem;
+
+}
+.mini-header {
+    font-weight: 600;
+    letter-spacing: 0.04rem;
+}
+.footer-col {
+    display: flex;
+    flex-direction: row;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+ul.t-menu {
+    display: inline-flex;
+    text-align: right;
+    padding-top: 1.4rem;
+    list-style:none
+}
+ul.mini-menu {
+    width: 18rem;
+    margin-bottom: 1.6rem;
+    margin: 0;
+    padding: 0;
+    display: grid;
+}
+li.icon {
+    display: inline-block;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+ul.social-icon {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+}
+colum.f-seccion {
+    width: 18%;
+    text-align: left;
+}
+ul.footer-menu {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 0.8rem;
+    padding: 0;
+    font-family: arial,helvetica Neue, helvetica, sans-serif;
+    text-decoration: underline;
+    margin-left: 0.5rem;
+}
+hi {
+    padding: 0.6rem;
+}
+hi ::before{
+    content: "|";
+}
+hi:first-child ::before{
+    content: "";
+}
