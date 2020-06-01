@@ -127,7 +127,12 @@ li {
 /*css popup*/
 .emerg-popup {
     visibility: hidden;
-    background: rgba(0,0,0); 
+    background: rgba(0,0,0);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    z-index: 10;
 }
 .emerg-popup.active {
     visibility: visible;
