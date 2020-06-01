@@ -24,12 +24,13 @@ body {
     margin: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 
 .msg_superior {
     padding: 1rem;
@@ -140,7 +141,6 @@ body {
     opacity: 0;
     background: white;
 }
-
 
 .dropdown-content .row {
     display: flex;
@@ -342,4 +342,25 @@ body {
 .background-opaco.active {
     visibility: visible;
     transition: visibility 0.3s linear;
+}
+
+@media (max-width: 1023px) {
+    .desktop {
+        display: none;
+    }
+
+    .footer-menu-principal {
+        padding: 0;
+    }
+
+    .footer-col {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .mobile {
+        display: none;
+    }
 }

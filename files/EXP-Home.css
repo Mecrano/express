@@ -1,4 +1,4 @@
-#banners-principal > img {
+#banners-principal img {
     width: 100%;
 }
 
@@ -31,4 +31,15 @@
 .scroll {
     height: 600px;
     width: 100%;
+}
+
+
+.botones {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.slick-slide {
+    position: relative;
 }
