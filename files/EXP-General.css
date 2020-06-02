@@ -1,3 +1,4 @@
+/****** FUENTES  INICIO *****/
 @font-face {
     font-family: "express";
     src: url("../arquivos/ES_Reg.woff.css") format("woff");
@@ -26,7 +27,9 @@
     font-family: "express-sans-bold";
     src: url("/arquivos/ExpressSans-BoldCond.woff.css") format("woff");
 }
+/****** FUENTES  FIN *****/
 
+/****** NORMALIZADORES (ESTILOS BASICOS) INICIO *****/
 html,
 body {
     font-size: 10px;
@@ -40,6 +43,8 @@ body {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+/****** NORMALIZADORES (ESTILOS BASICOS) FIN *****/
+
 
 .msg_superior {
     padding: 1rem;
