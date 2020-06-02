@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Express Panama</title>
+        <link rel="stylesheet" href="/files/EXP-General.css" />
+        <link rel="stylesheet" href="/files/EXP-Home.css"/>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <script src="/arquivos/jquery-1.8.3.min.js"></script>
+        <link rel="stylesheet" href="/arquivos/slick.css" />
+    </head>
+    <body id="home-page">
+        <header>
+            <div class="msg_superior"></div>
+            <div class="menu-superior">
+                <div class="izquierda">
+                    <p>Envio Gratis por mas de $100 USD <a href="/express-promo/envio-gratis">Detalles</a></p>
+                </div>
+                <div class="centro">
+                    <img src="/arquivos/express-logo.svg" alt="" />
+                </div>
+                <div class="derecha">
+                    <div class="logo-lupa" id="logo-lupa">
+                        <svg
+                            class="_2CsVP svg-icon--search"
+                            width="32"
+                            height="32"
+                            viewBox="0 0 32 32"
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            data-icon="searchIcon"
+                        >
+                            <g id="Action" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g
+                                    id="Action/-Search-(Normal)"
+                                    transform="translate(-8.000000, -2.000000)"
+                                    stroke="#000000"
+                                    stroke-width="1.5"
+                                >
+                                    <g id="icon" transform="translate(8.000000, 7.000000)">
+                                        <path
+                                            d="M12.0096067,12.4163625 L17.1115176,17.5532981"
+                                            id="Line-5"
+                                            stroke-linecap="square"
+                                        ></path>
+                                        <ellipse
+                                            id="Oval-7"
+                                            cx="7.44886364"
+                                            cy="7.5"
+                                            rx="6.69886364"
+                                            ry="6.75"
+                                        ></ellipse>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="logo-mi-cuenta">
+                        <svg
+                            class="_2CsVP svg-icon--account"
+                            width="32"
+                            height="32"
+                            viewBox="0 0 32 32"
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            data-icon="account"
+                        >
+                            <g id="Action" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g
+                                    id="Action/-Account-(Normal)"
+                                    transform="translate(-6.000000, -3.000000)"
+                                    stroke="#000000"
+                                    stroke-width="1.5"
+                                >
+                                    <g id="icon" transform="translate(7.000000, 5.000000)">
+                                        <ellipse
+                                            id="Oval"
+                                            cx="8.91"
+                                            cy="5.38695652"
+                                            rx="4.86"
+                                            ry="4.93043478"
+                                        ></ellipse>
+                                        <path
+                                            d="M17.82,20.5434783 C17.82,16.4589724 13.8308571,13.1478261 8.91,13.1478261 C3.98914288,13.1478261 0,16.4589724 0,20.5434783"
+                                            id="Shape"
+                                        ></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="logo-carrito">
+                        <svg
+                            class="_2CsVP svg-icon--shopping-bag"
+                            width="32"
+                            height="32"
+                            viewBox="0 0 32 32"
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            data-icon="shoppingBag"
+                        >
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <path
+                                    d="M21.1497662,8.98572868 L28,9 L28,25 L4,25 L4,8.95 L10.5650096,8.9636771 C11.2988129,5.58831043 13.0297121,3.52 15.855,3.52 C18.6864354,3.52 20.4187143,5.59732095 21.1497662,8.98572868 Z M19.6065703,8.98251369 C18.9819169,6.4620837 17.7132983,5.02 15.855,5.02 C14.0005448,5.02 12.7333328,6.45612521 12.1073134,8.96689024 L19.6065703,8.98251369 Z M10.3143108,10.4631581 L5.5,10.4531283 L5.5,23.5 L26.5,23.5 L26.5,10.4968783 L21.3984949,10.4862501 C21.5032373,11.3527643 21.555,12.2838548 21.555,13.27 L20.055,13.27 C20.055,12.2612405 19.9981885,11.3292783 19.8859065,10.4830989 L11.8263303,10.4663081 C11.7125661,11.3169447 11.655,12.2545637 11.655,13.27 L10.155,13.27 C10.155,12.275089 10.207687,11.3362157 10.3143108,10.4631581 Z"
+                                    id="Shopping_Bag"
+                                    fill="#000000"
+                                    fill-rule="nonzero"
+                                ></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-inferior">
+                <div class="nav navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            MUJER
+                            <i class="fa"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <div class="row">
+                                <div>
+                                    <div class="column">
+                                        <p>NEW AND NOW</p>
+                                        <a href="#">New Arrivals</a>
+                                        <a href="#">Art of the Essential</a>
+                                        <a href="#">NEW! Linen</a>
+                                        <a href="#">NEW! White Out</a>
+                                        <a href="#">New Romantic</a>
+                                        <a href="#">Moderm Femme</a>
+                                    </div>
+                                    <div class="column">
+                                        <p>CLOTHNG</p>
+                                        <a href="#">Dresses</a>
+                                        <a href="#">Jumpsuits and Rompers</a>
+                                        <a href="#">Tops</a>
+                                        <a href="#">Sweaters</a>
+                                        <a href="#">Bottoms</a>
+                                        <a href="#">Jeans</a>
+                                        <a href="#">Dress Pants</a>
+                                        <a href="#">Casual Pants</a>
+                                        <a href="#">Skirts</a>
+                                        <a href="#">Shorts</a>
+                                        <a href="#">Jackets and Coats</a>
+                                        <a href="#">Suiting</a>
+                                    </div>
+                                    <div class="column">
+                                        <p>ACCESSORIES AND SHOES</p>
+                                        <a href="#">Shoes</a>
+                                        <a href="#">Jewelry</a>
+                                        <a href="#">Hangbags</a>
+                                        <a href="#">Belts</a>
+                                        <a href="#">Hairs Accessories</a>
+                                        <a href="#">Tight and Socks</a>
+                                        <a href="#">Sunglasses</a>
+                                        <a href="#">All Accessories</a>
+                                    </div>
+                                    <div class="column">
+                                        <p>STYLE</p>
+                                        <a href="#">Express Together</a>
+                                        <a href="#">Express Edit</a>
+                                    </div>
+                                </div>
+                                <div class="column-img">
+                                    <img class="img-menu" src="/arquivos/womens.jpg" />
+                                    <div class="link-img">
+                                        <a href="">living in linen</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            HOMBRE
+                            <i class="fa"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <div class="row">
+                                <div>
+                                    <div class="column">
+                                        <p>NEW AND NOW</p>
+                                        <a href="#">New Arrivals</a>
+                                        <a href="#">Art of the Essential</a>
+                                        <a href="#">Luxe Confort Knits</a>
+                                        <a href="#">Bold in Black</a>
+                                        <a href="#">Color Code: Indigo</a>
+                                        <p>WAYS TO WORK</p>
+                                        <a href="#">Back to the Office</a>
+                                        <a href="#">Work From Home Shop</a>
+                                        <a href="#">Job Interview Altire</a>
+                                    </div>
+                                    <div class="column">
+                                        <p>CLOTHING</p>
+                                        <a href="#">Shirts</a>
+                                        <a href="#">Button Down Shirts</a>
+                                        <a href="#">T-Shirts</a>
+                                        <a href="#">Polos</a>
+                                        <a href="#">SweatShirts and Hoodies</a>
+                                        <a href="#">Bottoms</a>
+                                        <a href="#">Jeans</a>
+                                        <a href="#">Shorts</a>
+                                        <a href="#">Dress Pants</a>
+                                        <a href="#">Casual Pants and Joggers</a>
+                                        <a href="#">Suiting</a>
+                                        <a href="#">Blazers</a>
+                                        <a href="#">Coat and Jackets</a>
+                                        <a href="#">Underwear</a>
+                                    </div>
+                                    <div class="column">
+                                        <p>ACCESSORIES AND SHOES</p>
+                                        <a href="#">Ties and Bow Ties</a>
+                                        <a href="#">Socks</a>
+                                        <a href="#">Bells and Suspenders</a>
+                                        <a href="#">Bags and Wallets</a>
+                                        <a href="#">Sunglasses</a>
+                                        <a href="#">Home and Tech</a>
+                                        <a href="#">All Accessories</a>
+                                    </div>
+                                    <div class="column">
+                                        <p>STYLE</p>
+                                        <a href="#">Express Together</a>
+                                        <a href="#">Express Edit</a>
+                                    </div>
+                                </div>
+                                <div class="column-img">
+                                    <img class="img-menu" src="/arquivos/mens.jpg" />
+                                    <div class="link-img">
+                                        <a href="">STAY- HOME MUST-HAVES</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            JEANS
+                            <i class="fa"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <div class="row">
+                                <div>
+                                    <div class="column">
+                                        <p>WOMEN'S JEANS</p>
+                                        <a href="#">Skinny Jeans</a>
+                                        <a href="#">Mom Jeans</a>
+                                        <a href="#">Straight Jeans</a>
+                                        <a href="#">Flare Jeans</a>
+                                        <a href="#">Cropped Jeans</a>
+                                        <a href="#">All Women's Jeans</a>
+                                    </div>
+                                    <div class="column">
+                                        <p>MEN'S JEANS</p>
+                                        <a href="#">Skinny Jeans</a>
+                                        <a href="#">Super Skinny Jeans</a>
+                                        <a href="#">Slim Jeans</a>
+                                        <a href="#">Slim Straight Jeans</a>
+                                        <a href="#">Classic Strignght Jeans</a>
+                                        <a href="#">Relaxed Jeans</a>
+                                        <a href="#">Hyper Stretch</a>
+                                        <a href="#">All Men's Jeans</a>
+                                    </div>
+                                </div>
+                                <div class="column-img">
+                                    <img class="img-menu" src="/arquivos/jeans.jpg" />
+                                    <div class="link-img">
+                                        <a href="">express jeans</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            NUEVO
+                            <i class="fa"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <div class="row">
+                                <div>
+                                    <div class="column">
+                                        <p>WOMEN'S NEW</p>
+                                        <a href="#">New Arrivals</a>
+                                        <a href="#">Art Of The Essential</a>
+                                        <a href="#">NEW! Linen</a>
+                                        <a href="#">NEW! White Out</a>
+                                        <a href="#">New Romantic</a>
+                                        <a href="#">Moderm Femme</a>
+                                        <a href="#">Express Edit</a>
+                                    </div>
+                                    <div class="column">
+                                        <p>MEN'S NEW</p>
+                                        <a href="#">New Arrivals</a>
+                                        <a href="#">Art Of The Essential</a>
+                                        <a href="#">Luxe Confort Knits</a>
+                                        <a href="#">Express Edit</a>
+                                        <a href="#">Bold in Black</a>
+                                        <a href="#">Color Code: Indigo</a>
+                                    </div>
+                                </div>
+                                <div class="column-img">
+                                    <img class="img-menu" src="/arquivos/news.jpg" />
+                                    <div class="link-img">
+                                        <a href="">WOMEN'S NEW ARRIVALS</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            SALE
+                            <i class="fa"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <div class="row">
+                                <div class="column"></div>
+                                <div class="column">
+                                    <p>WOMEN'S CLEARANCE</p>
+                                    <a href="#">Tops</a>
+                                    <a href="#">Bottoms</a>
+                                    <a href="#">Dresses and Jumpsuits</a>
+                                    <a href="#">Jackets and Coats</a>
+                                    <a href="#">Accessories</a>
+                                    <a href="#">Shoes</a>
+                                    <a href="#">Final Sale</a>
+                                    <a href="#">All Women's Clearance</a>
+                                </div>
+                                <div class="column">
+                                    <p>MEN'S CLEARANCE</p>
+                                    <a href="#">Shirts</a>
+                                    <a href="#">Bottoms</a>
+                                    <a href="#">Jackets and Coats</a>
+                                    <a href="#">Accessories</a>
+                                    <a href="#">Final Sale</a>
+                                    <a href="#">All Men's Clearance</a>
+                                </div>
+                                <div class="column-img">
+                                    <img class="img-menu" src="/arquivos/sales.jpg" />
+                                    <div class="link-img">
+                                        <a href="">sale</a>
+                                    </div>
+                                </div>
+                                <div class="column"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div>
+            <div id="background-opaco" class="background-opaco"></div>
+        </div>
+        <div>
+            <div id="menu-slide-lupa" class="menu-lupa">
+                <div class="buscador-exp">
+                    <svg
+                        class="_2CsVP svg-icon--search"
+                        width="19px"
+                        height="19px"
+                        viewBox="0 0 19 19"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        data-icon="searchIcon"
+                    >
+                        <g id="Action" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g
+                                id="Action/-Search-(Normal)"
+                                transform="translate(-8.000000, -7.000000)"
+                                stroke="#000000"
+                                stroke-width="1.5"
+                            >
+                                <g id="icon" transform="translate(8.000000, 7.000000)">
+                                    <path
+                                        d="M12.0096067,12.4163625 L17.1115176,17.5532981"
+                                        id="Line-5"
+                                        stroke-linecap="square"
+                                    ></path>
+                                    <ellipse id="Oval-7" cx="7.44886364" cy="7.5" rx="6.69886364" ry="6.75"></ellipse>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <vtex.cmc:fullTextSearchBox />
+                </div>
+                <div class="buscador-links">
+                    <p>TRENDING SEARCH</p>
+                    <a href="#">Women's Stay Home Must Haves</a>
+                    <a href="#">Men's WFH Shop</a>
+                    <a href="#">Women's Blazers</a>
+                    <a href="#">Men's Shirts</a>
+                    <a href="#">Women's Cropped Jeans</a>
+                    <a href="#">Men's T-Shirts</a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div id="menu-slide-cuenta" class="menu-mi-cuenta">
+                <div>
+                    <div class="LogoPrincipal">
+                        <img src="/arquivos/express-logo.svg" alt="" />
+                    </div>
+                    <div class="ConShopEarn">
+                        <div class="shop">shop.engage.</div>
+                        <div class="earn">earn rewards.</div>
+                    </div>
+                    <div class="BtnNuevos">
+                        <button class="btnSignIn">Sign In</button>
+                        <button class="btnJoinNow">Join Now</button>
+
+                        <div class="LearnMoreLink">
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="ContenedorCuenta">
+                        <div class="MyAccountAuxHelp">
+                            <p class="TituloAcount">Help And More</p>
+                            <a href="#">Track Order</a>
+                            <a href="#">Find a Store</a>
+                            <a href="#">Gift Cards</a>
+                            <a href="#">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div id="menu-slide-carrito" class="menu-carrito"></div>
+        </div>
+        <div id="mainBanners">
+            <div class="box-banner">
+                <a href="/1banner"
+                    ><img
+                        width="1920"
+                        height="801"
+                        id="ihttps://express.vteximg.com.br/arquivos/ids/155497/1banner.png"
+                        alt="1banner"
+                        src="https://express.vteximg.com.br/arquivos/ids/155497/1banner.png"
+                        complete="complete"
+                /></a>
+            </div>
+            <div class="box-banner">
+                <a href="/2banner"
+                    ><img
+                        width="1920"
+                        height="801"
+                        id="ihttps://express.vteximg.com.br/arquivos/ids/155495/2banner.png"
+                        alt="2banner"
+                        src="https://express.vteximg.com.br/arquivos/ids/155495/2banner.png"
+                        complete="complete"
+                /></a>
+            </div>
+            <div class="box-banner">
+                <a href="/3banner"
+                    ><img
+                        width="1920"
+                        height="801"
+                        id="ihttps://express.vteximg.com.br/arquivos/ids/155496/3banner.png"
+                        alt="3banner"
+                        src="https://express.vteximg.com.br/arquivos/ids/155496/3banner.png"
+                        complete="complete"
+                /></a>
+            </div>
+        </div>
+
+        <div class="contenedor-submenu">
+            <div class="imagenes-menu">
+                <img class="img-submenus" src="/arquivos/womens-tops.jpg" />
+                <div class="links-submenus">
+                    <a href="">women's tops</a>
+                </div>
+            </div>
+            <div class="imagenes-menu">
+                <img class="img-submenus" src="/arquivos/mens-suits.jpg" />
+                <div class="links-submenus">
+                    <a href="">men's suits</a>
+                </div>
+            </div>
+            <div class="imagenes-menu">
+                <img class="img-submenus" src="/arquivos/womens-dresses.jpg" />
+                <div class="links-submenus">
+                    <a href="">women's dresses</a>
+                </div>
+            </div>
+            <div class="imagenes-menu">
+                <img class="img-submenus" src="/arquivos/mens-shirts.jpg" />
+                <div class="links-submenus">
+                    <a href="">men's shirts</a>
+                </div>
+            </div>
+            <div class="imagenes-menu">
+                <img class="img-submenus" src="/arquivos/womens-shorts.jpg" />
+                <div class="links-submenus">
+                    <a href="">women's shorts</a>
+                </div>
+            </div>
+
+            <div class="imagenes-menu">
+                <img class="img-submenus" src="/arquivos/mens-jeans.jpg" />
+                <div class="links-submenus">
+                    <a href="">men's jeans</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor-submenu-2">
+            <div class="titulo-submenu-center">
+                <p style="text-align: center;">
+                    <span class="titulo-submenu-normal">#</span>
+                    <span class="titulo-submenu-bold">EXPRESS</span>
+                    <span class="titulo-submenu-reg">TOGETHER</span>
+                </p>
+            </div>
+            <div class="imagenes-submenus-2">
+                <div class="contenedor-img-2">
+                    <img class="img-submenus-2" src="/arquivos/exptogether-p1.jpg" />
+                </div>
+                <div class="contenedor-img-2">
+                    <img class="img-submenus-2" src="/arquivos/exptogether-p2.jpg" />
+                </div>
+                <div class="contenedor-img-2">
+                    <img class="img-submenus-2" src="/arquivos/exptogether-p3.jpg" />
+                </div>
+            </div>
+        </div>
+
+        <!--vtex:contentPlaceHolder id="promo-express" /-->
+
+        <div id="extra-footer-top"></div>
+
+        <footer class="footer">
+            <div class="footer-menu-principal">
+                <div class="footer-contenido">
+                    <div class="footer-col">
+                        <colum class="f-social">
+                            <div class="social-enlace">
+                                <ul class="social-icon">
+                                    <li class="icon">
+                                        <a
+                                            href="https://www.instagram.com/expresspanama/?hl=es-la"
+                                            target="_blank"
+                                            aria-haspopup="true"
+                                            aria-label="Express on instagram. "
+                                            title="Express en instagram"
+                                        >
+                                            <svg width="42" height="42" viewBox="0 0 800 800">
+                                                <path
+                                                    d="M150 400c0-119 0-166 42-208s88-42 208-42 166 0 208 42 42 89 42 208 0 166-42 208-88 42-208 42-166 0-208-42-42-89-42-208zm455 0c0-114 0-148-29-176-29-29-62-29-176-29s-148 0-176 29c-29 29-29 62-29 176s0 148 29 176c29 29 62 29 176 29s148 0 176-29c29-29 29-62 29-176zM400 272a128 128 0 1 1 0 256 128 128 0 0 1 0-256zm0 211c46 0 83-37 83-83s-37-83-83-83-83 37-83 83 37 83 83 83zm163-216c0 16-13 30-30 30-16 0-30-14-30-30 0-17 14-30 30-30 17 0 30 13 30 30z"
+                                                ></path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="icon">
+                                        <a
+                                            href="https://www.facebook.com/express.panama"
+                                            target="_blank"
+                                            aria-haspopup="true"
+                                            aria-label="Express on facebook. "
+                                            title="Express en facebook"
+                                        >
+                                            <svg width="42" height="42" viewBox="0 0 800 800">
+                                                <path
+                                                    d="M604 170c15 0 26 11 26 26v408c0 15-11 26-26 26H487V452h60l9-70h-69v-44c0-20 6-34 35-34h37v-62s-24-3-54-3c-53 0-89 33-89 92v51h-60v70h60v178H196c-15 0-26-11-26-26V196c0-15 11-26 26-26h408z"
+                                                ></path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="icon">
+                                        <a
+                                            href="https://open.spotify.com/album/3d912UJRunrxLfxSPe54LG?highlight=spotify:track:7i3fCqH2UYaU2LaegMfdE7"
+                                            target="_blank"
+                                            aria-haspopup="true"
+                                            aria-label="Express on spotify. "
+                                            title="Express en spotify"
+                                        >
+                                            <svg width="42" height="42" viewBox="0 0 800 800">
+                                                <path
+                                                    d="M400,170c-127,0-230,103-230,230c0,127,103,230,230,230c127,0,230-103,230-230C630,273,527,170,400,170z M505.5,501.7c-4.1,6.8-13,8.9-19.7,4.8c-54-33-122-40.5-202.1-22.2c-7.7,1.8-15.4-3.1-17.2-10.8c-1.8-7.7,3-15.4,10.8-17.2 c87.6-20,162.8-11.4,223.4,25.6C507.5,486.2,509.6,495,505.5,501.7z M533.6,439.1c-5.2,8.4-16.2,11.1-24.7,5.9 c-61.8-38-156.1-49-229.2-26.8c-9.5,2.9-19.5-2.5-22.4-11.9c-2.9-9.5,2.5-19.5,12-22.4c83.5-25.3,187.4-13.1,258.4,30.6 C536.2,419.7,538.8,430.7,533.6,439.1z M536.1,373.9c-74.1-44-196.4-48.1-267.2-26.6c-11.4,3.4-23.4-3-26.8-14.3 c-3.4-11.4,3-23.4,14.3-26.8c81.2-24.7,216.3-19.9,301.7,30.8c10.2,6.1,13.6,19.3,7.5,29.5C559.5,376.6,546.2,380,536.1,373.9z"
+                                                ></path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="registro-alertas">
+                                <ul class="footer-menu">
+                                    <li>
+                                        <a href="#" id="show-email-promotion" class="show-email-promotion">
+                                            Registrate para recibir E-mail
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </colum>
+                        <colum class="f-seccion">
+                            <div>
+                                <div class="mini-header" role="heading" aria-level="2" tabindex="0">
+                                    Localizador de Tienda
+                                </div>
+                                <ul class="mini-menu">
+                                    <a href=""> Encuentra tu tienda </a>
+                                </ul>
+                            </div>
+                        </colum>
+                        <colum class="f-seccion">
+                            <div>
+                                <div class="mini-header" role="heading" aria-level="2" tabindex="0">
+                                    Gift Card
+                                </div>
+                                <ul class="mini-menu">
+                                    <a href=""> Compra Tarjetas de Regalo </a>
+                                    <a href=""> Confirma tu Balance </a>
+                                </ul>
+                                <div class="mini-header" role="heading" aria-level="2" tabindex="0">
+                                    Sobre Express
+                                </div>
+                                <ul class="mini-menu">
+                                    <a href=""> Nosotros </a>
+                                    <a href=""> Quiénes somos </a>
+                                </ul>
+                            </div>
+                        </colum>
+                        <colum class="f-seccion">
+                            <div class="mini-header" role="heading" aria-level="2" tabindex="0">
+                                Páginas Populares
+                            </div>
+                            <ul class="mini-menu">
+                                <a href="">Ropa de Mujeres</a>
+                                <a href="">Ropa de Hombres</a>
+                                <a href="">Jeans</a>
+                                <a href="">Tops de Mujeres</a>
+                                <a href="">Faldas de Mujeres</a>
+                                <a href="">Shorts de Mujeres</a>
+                                <a href="">Camisas de Hombre</a>
+                                <a href="">Shorts de Hombre</a>
+                            </ul>
+                        </colum>
+                        <colum class="f-seccion">
+                            <div class="mini-header" role="heading" aria-level="2" tabindex="0">
+                                Servicio al Cliente
+                            </div>
+                            <ul class="mini-menu">
+                                <a href="">Contáctanos</a>
+                                <a href="">Ayuda</a>
+                                <a href="">Devoluciones</a>
+                                <a href="">Feedback</a>
+                            </ul>
+                        </colum>
+                    </div>
+                    <div class="footer-inferior">
+                        <div class="footer-terminos">
+                            <ul class="t-menu">
+                                <hi>
+                                    <a href="">Terminos y Condiciones</a>
+                                </hi>
+                                <hi>
+                                    <a>|</a>
+                                </hi>
+                                <hi>
+                                    <a href="">Por confirmar 1</a>
+                                </hi>
+                                <hi>
+                                    <a>|</a>
+                                </hi>
+                                <hi>
+                                    <a href="">Por confirmar 2</a>
+                                </hi>
+                                <hi>
+                                    <a>|</a>
+                                </hi>
+                                <hi>
+                                    <a href="">Por confirmar 3</a>
+                                </hi>
+                                <hi>
+                                    <a>|</a>
+                                </hi>
+                                <hi>
+                                    <a>© 2020 Express.Panama Todos los derechos reservados.</a>
+                                </hi>
+                            </ul>
+                        </div>
+                        <div class="ima-footer">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="/arquivos/bootstrap.js?u=1"></script>
+        <script src="/files/EXP-General.js"></script>
+        <script src="/arquivos/slick.min.js"></script>
+
+        <script src="/files/EXP-Home.js"></script>
+    </body>
+</html>

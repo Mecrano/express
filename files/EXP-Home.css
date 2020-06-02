@@ -1,5 +1,8 @@
-#banners-principal img {
+#mainBanners .box-banner a,
+#mainBanners .box-banner img {
+    display: block;
     width: 100%;
+    height: auto;
 }
 
 .slick-arrow {
@@ -28,18 +31,112 @@
     content: ">";
 }
 
-.scroll {
-    height: 600px;
+ul.slick-dots {
+    display: flex !important;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slick-dots > li {
+    display: block;
+    width: 30px;
+}
+
+ul.slick-dots > li > button {
+    background: black;
+    border: none;
+    font-size: 0;
+    border-radius: 100%;
+    width: 5px;
+    height: 5px;
+}
+
+.contenedor-submenu {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid #e1e1e1;
+    padding-top: 7rem;
+    padding-right: 4rem;
+    padding-bottom: 7rem;
+    padding-left: 4rem;
+}
+
+.imagenes-menus {
+    flex: 1;
+    display: flex;
+}
+
+.contenedor-submenu-2 {
+    padding-top: 7rem;
+}
+
+.imagenes-menu a {
+    color: #17171d;
+    position: relative;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.1rem;
+    font-family: "express", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-bottom: 2px solid #000;
+}
+
+.links-submenus {
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+}
+
+.img-submenus {
     width: 100%;
 }
 
-
-.botones {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+.titulo-submenu-center {
+    font-size: 1rem;
+    line-height: 1;
+    margin: 0 0 0.75em;
 }
 
-.slick-slide {
-    position: relative;
+.titulo-submenu-normal {
+    font-family: "express-sans-reg", Arial;
+    font-size: 2.6rem;
+    letter-spacing: normal;
+    word-spacing: normal;
+    white-space: normal;
+}
+
+.titulo-submenu-bold {
+    font-family: "express-sans-bold", Arial;
+    font-size: 2.6rem;
+    letter-spacing: normal;
+    word-spacing: normal;
+    white-space: normal;
+}
+.titulo-submenu-reg {
+    font-family: "express-sans-reg", Arial;
+    font-size: 2.6rem;
+    letter-spacing: normal;
+    word-spacing: normal;
+    white-space: normal;
+}
+
+.imagenes-submenus-2 {
+    display: flex;
+}
+.contenedor-img-2 {
+    flex: 1;
+    padding: 2rem;
+}
+
+.img-submenus-2 {
+    width: 100%;
 }
