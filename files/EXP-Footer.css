@@ -71,6 +71,8 @@ hi a {
     flex-direction: row;
     padding-top: 3rem;
     padding-bottom: 0;
+    flex-wrap: wrap;
+   align-items: flex-start;
 }
 ul.t-menu {
     display: inline-flex;
