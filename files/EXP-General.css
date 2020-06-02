@@ -45,10 +45,11 @@ body {
 }
 /****** NORMALIZADORES (ESTILOS BASICOS) FIN *****/
 
-
 .msg_superior {
     padding: 1rem;
 }
+
+/**** HEADER INICIO *****/
 .menu-superior {
     display: flex;
     justify-content: space-between;
@@ -101,18 +102,9 @@ body {
     background-color: none;
 }
 
-/* Links inside the navbar 
-  .navbar a {
-  float: left;
-  text-align: center;
-  padding: 5px 0px;
-  text-decoration: none;
-  }*/
-
 /* The dropdown container */
 .dropdown {
     float: left;
-
     overflow: hidden;
 }
 
@@ -173,7 +165,6 @@ body {
 .column {
     float: left;
     flex: 1;
-
     background-color: #fff;
 }
 
@@ -380,19 +371,10 @@ body {
     font-size: 14px;
 }
 
-.busca label {
-    display: none;
-}
-
-.busca legend {
-    display: none;
-}
-
+.busca label,
+.btn-buscar,
+.busca legend,
 .busca select {
-    display: none;
-}
-
-.btn-buscar {
     display: none;
 }
 
@@ -696,14 +678,11 @@ button {
 
 .LearnMoreLink {
     display: block;
-
     margin-top: 20px;
     margin-left: 125px;
-
     text-align: center;
     text-decoration: underline;
     color: #696969;
-
     font-size: 1.5rem;
     font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
 }
@@ -755,14 +734,19 @@ a {
     font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
     font-size: 1.3rem;
 }
+
 hi a {
     font-size: 13px;
     font-weight: 400;
 }
+
 .mini-header {
     font-weight: 600;
     letter-spacing: 0.03rem;
 }
+/**** HEADER FIN *****/
+
+/**** FOOTER INICIO *****/
 .footer-col {
     display: flex;
     flex-direction: row;
@@ -821,6 +805,7 @@ colum.f-seccion ul.mini-menu {
 li {
     height: 30px;
 }
+
 /*css popup*/
 .emerg-popup {
     visibility: hidden;
@@ -899,3 +884,4 @@ input.btn-submit {
 input.btn-submit:hover {
     background: rgba(134, 134, 134);
 }
+/**** FOOTER FIN *****/

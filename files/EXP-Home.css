@@ -1,3 +1,4 @@
+/*** Slider INICIO ***/
 #mainBanners .box-banner a,
 #mainBanners .box-banner img {
     display: block;
@@ -58,6 +59,7 @@ ul.slick-dots > li > button {
     width: 5px;
     height: 5px;
 }
+/*** Slider INICIO ***/
 
 .contenedor-submenu {
     display: flex;

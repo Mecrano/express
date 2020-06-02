@@ -1,11 +1,16 @@
-const formatter = new Intl.NumberFormat("en-US", {
+// Funciona para darle formato de moneda al precio crudo que nos da VTEX
+var formatter = new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",
 });
 
+// Funciona para crear el HTML del minicart, si esta vacio, pongo mensaje
 function crearCarrito(orderForm) {
+    // Limpieza del HTML de minicart
     $("div#menu-slide-carrito").empty();
+
     if (orderForm.items.length > 0) {
+        // HTML Inicial
         $(".menu-carrito").append(
             '<div class="header-carrito">' +
                 '<div class="bag-items">' +
@@ -22,6 +27,8 @@ function crearCarrito(orderForm) {
                 '<button class="button boton-bag" href="/checkout">VER CARRITO</button>' +
                 "</div>"
         );
+
+        // Itero sobre los items del carrito y genero el HTML para cada uno
         orderForm.items.forEach(function (item) {
             $(".menu-carrito").append(
                 '<div class="menu-carrito-detalle">' +
@@ -53,21 +60,12 @@ function crearCarrito(orderForm) {
             );
         });
     } else {
+        // Mensaje de carrito vacio
         $(".menu-carrito").append("<p>Su carrito esta vacio.</p>");
     }
 }
 
-$(document).ready(function () {
-    $(window).on("orderFormUpdated.vtex", function (evt, orderForm) {
-        crearCarrito(orderForm)
-    });
-
-    //**********Solo Activar en VTEX********
-
-    /*vtexjs.checkout.getOrderForm().done(function(orderForm) {
-        crearCarrito(orderForm)
-    })*/
-
+function iconsHeaderEvent() {
     $(".logo-lupa").hover(
         // Cuando entra el mouse
         function () {
@@ -77,7 +75,7 @@ $(document).ready(function () {
         // cuando sale el mouse
         function () {
             $("#menu-slide-lupa").css("width", "0%");
-        //    $("#background-opaco").removeClass("active");
+            //    $("#background-opaco").removeClass("active");
         }
     );
 
@@ -87,12 +85,12 @@ $(document).ready(function () {
             $(".logo-lupa").addClass("active");
             $("#menu-slide-lupa").css("width", "30%");
             $("#background-opaco").addClass("active");
-            $("logo-lupa").toggleClass( "hover" );
+            $("logo-lupa").toggleClass("hover");
         },
         // cuando sale el mouse
         function () {
             $("#menu-slide-lupa").css("width", "0%");
-          //  $("#background-opaco").removeClass("active");
+            //  $("#background-opaco").removeClass("active");
             $(".logo-lupa").removeClass("active");
         }
     );
@@ -105,9 +103,8 @@ $(document).ready(function () {
         },
         // cuando sale el mouse
         function () {
-            console.log("cerrar menu slide");
             $("#menu-slide-cuenta").css("width", "0%");
-          //  $("#background-opaco").removeClass("active");
+            //  $("#background-opaco").removeClass("active");
         }
     );
 
@@ -121,7 +118,7 @@ $(document).ready(function () {
         // cuando sale el mouse
         function () {
             $("#menu-slide-cuenta").css("width", "0%");
-           // $("#background-opaco").removeClass("active");
+            // $("#background-opaco").removeClass("active");
             $(".logo-mi-cuenta").removeClass("active");
         }
     );
@@ -136,7 +133,7 @@ $(document).ready(function () {
         // cuando sale el mouse
         function () {
             $("#menu-slide-carrito").css("width", "0%");
-           // $("#background-opaco").removeClass("active");
+            // $("#background-opaco").removeClass("active");
         }
     );
     $(".menu-carrito").hover(
@@ -150,33 +147,18 @@ $(document).ready(function () {
         // cuando sale el mouse
         function () {
             $("#menu-slide-carrito").css("width", "0%");
-           // $("#background-opaco").removeClass("active");
+            // $("#background-opaco").removeClass("active");
             $(".logo-carrito").removeClass("active");
         }
     );
-  
-   $(".background-opaco").hover(
-        function () {
-            $("#background-opaco").removeClass("active");
-        }
-        ,
-        {
 
-        }
+    $(".background-opaco").hover(function () {
+        $("#background-opaco").removeClass("active");
+    }, {});
 
-    );
-  
-     $(".menu-superior").hover(
-        function () {
-            $("#background-opaco").removeClass("active");
-        }
-        ,
-        {
-
-        }
-
-    );
-  
+    $(".menu-superior").hover(function () {
+        $("#background-opaco").removeClass("active");
+    }, {});
 
     $(".nav.navbar .dropdown").hover(
         // Cuando entra el mouse
@@ -194,7 +176,9 @@ $(document).ready(function () {
             $(".menu-inferior").css("z-index", "1");
         }
     );
+}
 
+function popUpFooter() {
     var AbrirPopup = $("#show-email-promotion"),
         emergpopup = $("#emerg-popup"),
         popup = $("#popup"),
@@ -207,4 +191,20 @@ $(document).ready(function () {
     CerrarPopup.click(function () {
         emergpopup.removeClass("active");
     });
+}
+
+$(document).ready(function () {
+    // Evento para generar el carrito cada que se agrega un producto al orderForm
+    $(window).on("orderFormUpdated.vtex", function (evt, orderForm) {
+        crearCarrito(orderForm);
+    });
+
+    //**********Solo Activar en VTEX********
+
+    /*vtexjs.checkout.getOrderForm().done(function(orderForm) {
+        crearCarrito(orderForm)
+    })*/
+
+    iconsHeaderEvent();
+    popUpFooter();
 });
