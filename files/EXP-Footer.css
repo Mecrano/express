@@ -69,7 +69,7 @@ li.icon {
 .mini-header {
     box-sizing:border-box;
     color:rgb(23,23,29);
-    display:blocck;
+    display:block;
     font-weight:600;
     line-height:19.5px;
     letter-spacing: 0.03rem;
@@ -208,3 +208,60 @@ label.radio-btn-label {
 .email-content {
     display: contents;
 }
+/******* INICIO MOBILE *******/
+@media(max-width: 1000px){
+    .footer-col {
+        display: block;
+    }
+    ul.social-icon {
+        display: flex;
+        justify-content: center;
+    }
+    .mini-header {
+        display:flex;
+        justify-content:center;
+        align-items: center;
+    }
+    ul.footer-menu {
+        text-align: center;
+        justify-content:center;
+        align-items:center;
+    }
+    ul.mini-menu {
+        text-align:center;
+        align-items:center;
+        width:100%
+    }
+    ul.t-menu {
+        display: grid;
+        text-align: center;
+        padding: 0;
+    }
+    /*popup*/
+    div#popup {
+        height: 186px;
+    }
+     .formulario-email {
+        display: block;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: center;
+    }
+    .contenedor-email {
+        display: grid;
+        justify-content: center;
+    }
+    input[type="email"] {
+        margin-bottom: 10px;
+    }
+    .email-pref {
+        padding-left: 10px;
+    }
+    label.radio-btn-label {
+        letter-spacing: 0.5px;
+    }
+    form {
+        margin-bottom: 15px;
+    }
+}
+/******* FIN MOBILE *******/
