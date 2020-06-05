@@ -10,7 +10,11 @@
     font-family: 'ExpressRegular';
     src: url('../arquivos/ES_Reg.woff.css') format('woff');
 }
-/* ***** INICIO DEL CSS DEL FOOTER ***** */
+@font-face {
+    font-family: 'ExpressCond';
+    src: url('../arquivos/ExpressSans-RegCond.woff.css') format('woff');
+}
+/* ***** INICIO DEL FOOTER ***** */
 .footer-menu-principal {
     box-sizing: border-box;
     direction: ltr;
@@ -114,6 +118,13 @@ hi {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
+ul.t-menu hi:after {
+    content: "|";
+    margin-left:15px;
+}
+ul.t-menu hi:last-child:after {
+    content: "";
+}
 /******* FIN DEL FOOTER*******/
 /*css popup*/
 .emerg-popup {
@@ -202,7 +213,7 @@ input.btn-submit:hover {
     background: rgba(134, 134, 134);
 }
 label.radio-btn-label {
-    font-family: ExpressCond;
+    font-family: "ExpressCond";
     letter-spacing: 0.5px;
 }
 .email-content {
@@ -236,6 +247,14 @@ label.radio-btn-label {
         display: grid;
         text-align: center;
         padding: 0;
+    }
+    ul.t-menu hi:after {
+        content: "";
+        margin-left:0;
+        display:none;
+    }
+    .footer-terminos {
+        margin-top: 120px;
     }
     /*popup*/
     div#popup {
