@@ -42,8 +42,13 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    outline: none;
 }
 /****** NORMALIZADORES (ESTILOS BASICOS) FIN *****/
+
+div#ajaxBusy {
+    display: none !important;
+}
 
 .msg_superior {
     padding: 1rem;
@@ -334,6 +339,27 @@ body {
     text-transform: uppercase;
     text-align: left;
     padding-left: 3rem;
+}
+
+.ui-autocomplete.ui-menu.ui-widget.ui-widget-content.ui-corner-all {
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    width: 280px !important;
+    background: white;
+    margin-top: 50px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    display: none !important;
+}
+
+.ui-corner-all {
+    display: flex;
+    align-items: center;
+}
+
+.ui-corner-all > img {
+    margin-right: 5px;
 }
 
 .background-opaco {
