@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+<head>
+    <title>Busqueda Vacia</title>
+    <vtex:metaTags />
+    <vtex:template id="EXP-Styles" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/files/EXP-Buscar-Vacia.css" />
+</head>
+<body id="Busqueda-vacia">
+    <!--  SubTemplate: Header -->
+    <vtex:template id="EXP-Header" />
+    <!-- /SubTemplate: Header -->
+    <div class="b-vacia">
+        <div id="busca-vazia-extra-top"></div>
+        <section id="busca-vazia-content" class="container">
+            <div id="box-bread-brumb">
+                <vtex.cmc:breadCrumb />
+            </div>
+            <div id="busca-vazia-extra-middle"></div>
+            <div class="row">
+                <article id="main-content" class="col-xs-12">
+                    <div class="title-category">
+                        <!--  Controle: Titulo -->
+                        <a href="#" class="pull-right" onclick="window.history.back();"><i
+                                class="fa fa-chevron-left"></i>Regresar</a>
+                        <h2>No pudimos encontrar nada para "<label id="search-text"></label>"</h2>
+                        <h1>Revisa la ortografía o ajusta la búsqueda.</h1>
+                        <!-- /Controle: Titulo -->
+                    </div><!-- .title-category -->
+                    <div id="collections">
+                        <div class="text-reco">RECOMENDADOS PARA TI</div>
+                        <div class="vitrina-sugerencias">
+                            <vtex:contentPlaceHolder id="vitrina-recomendados"/>
+                        </div>
+                    </div><!-- #collections -->
+                </article><!-- #main-content -->
+            </div><!-- .row -->
+        </section><!-- #content -->
+        <div id="busca-vazia-extra-bottom"></div>
+    </div>
+    <vtex:template id="EXP-Footer" />
+    <vtex:template id="EXP-Scripts" />
+    <script src="/files/EXP-Buscar-Vacia.js" />
+    </body>
+</html>
