@@ -22,6 +22,17 @@ button#btn-identified-user-button {
   color: #fff;
 }
 
+button#edit-address-button,
+button#new-address-button {
+  color: #000 !important;
+  border: 1px dashed #000 !important;
+}
+
+label.address-item.vtex-omnishipping-1-x-addressItemOption.vtex-omnishipping-1-x-active,
+label#CHEAPEST {
+  background: #f2f2f2;
+}
+
 i.icon-lock {
   color: #ccc !important;
 }
@@ -81,6 +92,14 @@ input#creditCardpayment-card-0Number {
   }
   .full-cart .summary-totalizers .info {
     text-align: left;
+  }
+  tr.srp-summary-result.hide .info {
+    width: 100%;
+  }
+
+  tr.srp-summary-result.hide .monetary {
+    right: 4rem;
+    position: absolute;
   }
 }
 .footer-menu-principal {
@@ -528,6 +547,21 @@ td.product-name {
     margin-right: 80px;
   }
 }
+@media (max-width: 495px) {
+  tr.srp-summary-result.hide .info {
+    width: 100%;
+    text-align: center;
+  }
+  tr.srp-summary-result.hide .monetary {
+    right: 0rem;
+    position: absolute;
+  }
+  span.best-price {
+    position: relative !important;
+    top: unset !important;
+    right: unset !important;
+  }
+}
 
 span.best-price {
   color: #000;
@@ -613,8 +647,8 @@ span.shipping-date.pull-left {
 }
 
 .vtex-omnishipping-1-x-summaryChange {
-  border: 1px dashed #000;
-  color: #000;
+  border: 1px dashed #000 !important;
+  color: #000 !important;
 }
 
 form.form-step.box-new.row-fluid {
@@ -637,8 +671,8 @@ form.form-step.box-new.row-fluid {
   .cart-fixed.cart-fixed-transition.affix {
     position: relative;
   }
-  .client-pre-email .btn-success{
-      top: 7px;
+  .client-pre-email .btn-success {
+    top: 7px;
   }
 }
 

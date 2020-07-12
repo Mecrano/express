@@ -3,7 +3,6 @@ a.cconf-continue-button.fr.mb2.ml3.w5-ns.w-100.hover-no-underline.dib.link.ba.tc
     background-color: #000;
     color: #fff;
 }
-/* /files/checkout5-custom.css */
 
 .centro {
     text-align: center;
@@ -17,7 +16,7 @@ a.cconf-continue-button.fr.mb2.ml3.w5-ns.w-100.hover-no-underline.dib.link.ba.tc
   
   .modal-body.default-modal-body.payment-confirmation-modal-body,
   .cf.br2.pa4.cconf-alert.ba.b--light-silver.bg-washed-green{
-      background: #ccc;
+      background: #F2F2F2;
   }
   
   p.sight{
