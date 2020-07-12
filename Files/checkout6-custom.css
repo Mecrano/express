@@ -16,21 +16,26 @@
   border-radius: unset;
 }
 
-button#btn-identified-user-button {
-  background: #000;
+.vtex-omnishipping-1-x-pc .btn{
+	border:unset;
+}
+button#btn-identified-user-button,
+.vtex-omnishipping-1-x-pc .btn{
+  background: #000 !important;
   border-radius: unset;
-  color: #fff;
+  color: #fff !important;
 }
 
 button#edit-address-button,
-button#new-address-button {
-  color: #000 !important;
-  border: 1px dashed #000 !important;
+button#new-address-button,
+button#back-to-address-list{
+    color: #000 !important;
+    border:1px dashed #000 !important;
 }
 
 label.address-item.vtex-omnishipping-1-x-addressItemOption.vtex-omnishipping-1-x-active,
 label#CHEAPEST {
-  background: #f2f2f2;
+    background: #F2F2F2;
 }
 
 i.icon-lock {
@@ -95,12 +100,12 @@ input#creditCardpayment-card-0Number {
   }
   tr.srp-summary-result.hide .info {
     width: 100%;
-  }
+}
 
-  tr.srp-summary-result.hide .monetary {
+tr.srp-summary-result.hide .monetary {
     right: 4rem;
     position: absolute;
-  }
+}  
 }
 .footer-menu-principal {
   box-sizing: border-box;
@@ -393,8 +398,8 @@ input#creditCardpayment-card-0Code:focus {
   outline: 0;
   outline: thin dotted \9;
   -webkit-box-shadow: #e59700;
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #e59700;
-  box-shadow: #e59700;
+  -moz-box-shadow: inset 0 0px 0px rgba(0,0,0,0.075), 0 0 3px rgb(229, 151, 0);
+  box-shadow: inset 0 0px 0px rgba(0,0,0,0.075), 0 0 3px rgb(229, 151, 0);
 }
 
 span.fn.product-name {
@@ -547,22 +552,22 @@ td.product-name {
     margin-right: 80px;
   }
 }
-@media (max-width: 495px) {
-  tr.srp-summary-result.hide .info {
-    width: 100%;
-    text-align: center;
-  }
-  tr.srp-summary-result.hide .monetary {
-    right: 0rem;
-    position: absolute;
-  }
-  span.best-price {
-    position: relative !important;
-    top: unset !important;
-    right: unset !important;
-  }
-}
-
+@media(max-width:495px){
+    tr.srp-summary-result.hide .info {
+        width: 100%;
+        text-align: center;
+    }
+    tr.srp-summary-result.hide .monetary {
+        right: 0rem;
+        position: absolute;
+    } 
+    span.best-price{
+        position:relative !important;
+        top: unset !important;
+        right: unset !important;
+    }
+ }
+ 
 span.best-price {
   color: #000;
   font-weight: 600;
@@ -591,7 +596,7 @@ span.best-price {
 
 th.product-price {
   color: #fff;
-  display: none;
+  /*display: none;*/
 }
 
 .body-cart,
@@ -626,6 +631,9 @@ small.seller.muted,
     right: 0px;
     top: 10px !important;
     left: unset !important;
+  }
+  th.product-price {
+  	display: none;
   }
 }
 
@@ -671,8 +679,8 @@ form.form-step.box-new.row-fluid {
   .cart-fixed.cart-fixed-transition.affix {
     position: relative;
   }
-  .client-pre-email .btn-success {
-    top: 7px;
+  .client-pre-email .btn-success{
+      top: 7px;
   }
 }
 
