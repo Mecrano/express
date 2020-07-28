@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+
+<head>
+    <title>Express Panama</title>
+    <vtex:metaTags />
+    <vtex:template id="EXP-Styles" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/files/EXP-Producto.css"/>
+    <link href="/files/zoom.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="product-page">
+
+        <!--  SubTemplate: Header -->
+        <vtex:template id="EXP-Header" />
+        <!-- /SubTemplate: Header -->
+        <div class="links-breadcrumb">
+        <vtex.cmc:breadCrumb />
+        <div class="separador">/</div>
+        <div class="titulosku">
+     
+        </div>
+        </div>
+      <div id="producto-desk"> 
+        <div class="product-main-container">
+            <div class="product-left-container">
+                <!-- vtex.cmc:ProductImage zoom="on"/ -->
+                <div class="carrusel-producto">
+                <div class="product-images-container"></div>
+                </div>
+                <div class="vitrina-sugerencias">
+              	<vtex:contentPlaceHolder id="vitrina-recomendados"/>
+                </div>
+            
+          </div>
+           
+            <div class="product-right-container">
+            <div class="productname-right-container">
+                <vtex.cmc:productName />
+                </div>
+                <div class="producto-price-and-reviews">
+                    <div class="producto-left-price-and-reviews">
+                          <vtex.cmc:skuPrice />
+                    </div>
+                </div>
+               <div class="seleccion-sku">
+               <vtex.cmc:skuSelection />
+               <p class='titulo-cantidad'>Cantidad</p>
+               <div class="boton-cantidad">
+                <button class="btn" type="button" id="menos">-</button>
+                  <input size="20" type="text" class="buy-in-page-quantity" value="1" productindex="0" style="display:block"/>
+                    <button class="btn" type="button" id="mas">+</button>
+               </div>
+               
+                <div class="boton-comprar">
+                <a class="buy-in-page-button"  style="display:block" >Agregar a shopping bag</a>
+                  </div>
+        
+                </div>
+                <div class="productdetails">
+                <div class="titulodetails">
+                <button class="accordiondetalles">Detalles del Producto</button>
+                </div>
+                    <div class="paneldetalles">
+                    <vtex.cmc:ProductDescription />
+		            <vtex.cmc:productSpecification />
+		            </div>
+            
+		        </div>
+		       <!-- <div class="envios">
+		         <div class="tituloenvios">
+                <button class="accordionenvios">Envios y Devoluciones</button>
+                </div>
+                    <div class="panelenvios">
+                  Realizamos envíos a cualquier parte de Panamá.
+                  Envío estándar gratuito todos los días en pedidos de más de $ 100 
+                  en línea en Express.com para Panamá.
+                  Devoluciones simples. Hasta 60 días. 
+                  Obtenga todos los detalles sobre devoluciones y cambios. 
+                  No incluye artículos en descuento.
+		            </div>
+            
+		        </div>-->
+		        
+		        
+		        
+            </div>
+        </div>
+
+		
+		</div>
+<div id="producto-mobile">
+    <div class="productname-right-container">
+                <vtex.cmc:productName />
+                </div>
+                    <div class="carrusel-producto">
+                <div class="product-images-container"></div>
+                </div>
+                
+    <div class="producto-price-and-reviews">
+                    <div class="producto-left-price-and-reviews">
+                          <vtex.cmc:skuPrice />
+                    </div>
+                </div>
+
+    
+    <div class="productdetails">
+                <div class="titulodetails">
+                <button class="accordiondetalles">Detalles del Producto</button>
+                </div>
+                    <div class="paneldetalles">
+                    <vtex.cmc:ProductDescription />
+		            <vtex.cmc:productSpecification />
+		            </div>
+            
+		        </div>
+    
+    <!-- <div class="envios">
+		         <div class="tituloenvios">
+                <button class="accordionenvios">Envios y Devoluciones</button>
+                </div>
+                    <div class="panelenvios">
+                  Realizamos envíos a cualquier parte de Panamá.
+                  Envío estándar gratuito todos los días en pedidos de más de $ 100 
+                  en línea en Express.com para Panamá.
+                  Devoluciones simples. Hasta 60 días. 
+                  Obtenga todos los detalles sobre devoluciones y cambios. 
+                  No incluye artículos en descuento.
+		            </div>
+            
+		        </div>-->
+		        
+     <div class="vitrina-sugerencias">
+              	<vtex:contentPlaceHolder id="vitrina-recomendados"/>
+                </div>
+    
+</div>
+
+    
+    
+    <vtex:template id="EXP-Footer" />
+        <vtex:template id="EXP-Scripts" />
+        <script src="/arquivos/jquery.zoom.min.js"></script>
+        <script src="/files/EXP-Producto.js"></script>
+</body>
+
+
+
+
+<div class="msgconfirmacion">
+  <p class='titulo-cantidad'>PRODUCTO AGREGADO</p>
+</div>
+</html>

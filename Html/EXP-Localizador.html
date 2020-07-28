@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+>
+    <head>
+        <title>Express Panama</title>
+        <vtex:metaTags />
+        <vtex:template id="EXP-Styles" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/files/EXP-Localizador.css"/>
+    </head>
+
+    <body id="home-page">
+        <!--  SubTemplate: Header -->
+        <vtex:template id="EXP-Header" />
+        <!-- /SubTemplate: Header -->
+        
+        <div id="locator">
+            <div id="addresses"></div>
+            <div class="contenedor-mapa">
+            <div id="map"></div> 
+                <div class="locator-legend">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20"><path fill="#212222" fill-rule="evenodd" stroke="#212222" d="M12 20.335a30.856 30.856 0 0 0 3.114-3.245c1.611-1.952 2.743-3.87 3.185-5.633a6.318 6.318 0 0 0 .201-1.534c0-3.53-2.925-6.423-6.5-6.423S5.5 6.393 5.5 9.923c0 .49.068 1.001.201 1.534.442 1.763 1.574 3.681 3.185 5.633A30.856 30.856 0 0 0 12 20.335z"></path></svg>
+                    <span class="Locator-legendText">Tiendas Express</span>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--  SubTemplate: Footer -->
+        <vtex:template id="EXP-Footer" />
+        <vtex:template id="EXP-Scripts" />
+        <script src="/files/EXP-Localizador.js"></script>
+        
+        <!--Load the API from the specified URL
+        * The async attribute allows the browser to render the page while the API loads
+        * The key parameter will contain your own API key (which is not needed for this tutorial)
+        * The callback parameter executes the initMap() function
+        -->
+        <script async="true" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp-mUg2PaDB_0ch-K5ywPxBeIGkyWV_xk&amp;callback=initMap"></script>
+    </body>
+</html>
