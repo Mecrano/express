@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+
+<head>
+    <vtex:metaTags/>
+    <vtex:template id="EXP-Styles" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/files/EXP-Login.css"/>
+
+</head>
+
+<body id="login-page">
+
+        <!--  SubTemplate: Header -->
+        <vtex:template id="EXP-Header" />
+        <!-- /SubTemplate: Header -->
+                                   
+
+        <section id="login-content" class="container">
+            <div class="cont-Welcom">
+                <div class="Welcome-img">
+                    <img class="img-wc" src="/arquivos/c9b25688.png" alt="" />
+                    <span class="w-message">
+                        <p class="w-principal">Bienvenido nuevamente</p>
+                        <p class="w-secundario">Descubre todo lo que tenemos para ti.</p>
+                    </span>
+                 </div>
+            </div>
+    		<vtex.cmc:userLogin/>
+        </section><!-- #content -->  
+                     
+                
+        <!--  SubTemplate: Footer -->
+        <vtex:template id="EXP-Footer" />
+        <!-- /SubTemplate: Footer -->
+        <vtex:template id="EXP-Scripts" />
+        <script src="/files/EXP-Login.js"></script>
+
+</body>
+</html>

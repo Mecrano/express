@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" 
+xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+
+<head>
+    <title>Contactanos</title>
+    <vtex:metaTags />
+    <vtex:template id="EXP-Styles" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/files/EXP-Contactanos.css"/>
+</head>
+<body id="contactos-exp">
+     <!--  SubTemplate: Header -->
+    <vtex:template id="EXP-Header" />
+    <!-- /SubTemplate: Header -->
+    <div class="contacto">
+        <div class="titulo">
+            <h1>CONTÁCTANOS</h1>
+        </div>
+        <div class="columnas-contacto">
+            <div class="columna-formulario">
+                <h2>E-Mail</h2>
+                <div class="error-l">
+                    <label id="error-envio"></label>
+                </div>
+                <form id="envio-formulario" action="">
+                    <div class="formulario">
+                        <h3>¿Cómo podemos ayudarte?</h3>
+                    </div>
+                    <div class="formulario">
+                        <div class="option-section">
+                            <select id="contact-subject" name="contact-subject" class="option-" required="required">
+                                <option value="none" disabled="disabled">Asunto del correo</option>
+                                <option value="OrderInquiries">Consultas de Pedidos en Línea</option>
+                                <option value="ProductFeedback">Comentarios del Producto</option>
+                                <option value="MailingList">Lista de Correo</option>
+                                <option value="SiteRelated">Sitios Relacionados</option>
+                                <option value="StoreInquiries">Consultas de la Tienda</option>
+                                <option value="Others">Otros</option>
+                            </select>
+                            <label id="error-select" for="contact-subject"></label>
+                        </div>
+                    </div>
+                    <div class="formulario">
+                        <div class="option-section">
+                            <textarea id="contact-message" maxlength="1000" placeholder="Su Mensaje" required="required"></textarea>
+                            <label id="error-message" for="contact-message"></label>
+                        </div>
+                    </div>
+                    <div class="formulario">
+                        <div class="option-section">
+                            <input type="email" id="contact-email-address" maxlength="40"
+                                placeholder="Dirección de E-Mail"
+                                oninvalid="setCustomValidity('Debe ingresar un email válido')"
+                                oninput="setCustomValidity('')" required="required"></input>
+                            <label id="error-email" for="contact-email-address"></label>
+                        </div>
+                    </div>
+                    <div class="formulario">
+                        <div class="option-section">
+                            <input type="text" id="contact-first-name" maxlength="40" placeholder="Nombre" required="required"></input>
+                            <label id="error-fname" for="contact-first-name"></label>
+                        </div>
+                    </div>
+                    <div class="formulario">
+                        <div class="option-section">
+                            <input type="text" id="contact-last-name" maxlength="40" placeholder="Apellido" required="required"></input>
+                            <label id="error-lname" for="contact-last-name"></label>
+                        </div>
+                    </div>
+                    <div class="formulario">
+                        <div class="option-section">
+                            <input id="contact-order-number" maxlength="40" placeholder="Número de Orden (Opcional)"></input>
+                            <label for="contact-order-number"></label>
+                        </div>
+                    </div>
+                    <button id="bt-enviar" type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="direcciones">
+                <div>
+                    DIRECCIONES
+                </div>
+            </div>
+            <div class="direcciones">
+                <div>
+                    TELEFONOS
+                </div>
+            </div>
+        </div>
+    </div>
+    <vtex:template id="EXP-Footer" />
+    <vtex:template id="EXP-Scripts" />
+    <script src="/files/EXP-Contactanos.js"></script>
+</body>
+</html>

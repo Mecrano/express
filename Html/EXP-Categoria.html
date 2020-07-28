@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+
+<head>
+    <title>Express Panama</title>
+    <vtex:metaTags />
+    <vtex:template id="EXP-Styles" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/files/EXP-Categoria.css"/>
+</head>
+
+
+<body id="category-page">
+
+     <!--  SubTemplate: Header -->
+    <vtex:template id="EXP-Header" />
+    <!-- /SubTemplate: Header -->
+    
+    <div id="menu-slide-express-view">
+        <div>
+            <span class="close-express-view">
+                X
+            </span>
+        </div>
+        <div>
+            <iframe frameborder="0"></iframe>
+        </div>
+    </div>
+
+    
+    <div class="category-main-container">
+        <div class="category-left-container">
+            <vtex.cmc:breadCrumb />
+            
+            <!-- Filtros -->
+            <vtex.cmc:searchNavigator />
+        </div>
+        
+        <div class="category-right-container">
+            <!-- Titulo de categoria -->
+            <div class="category-header">
+                <vtex.cmc:searchTitle />
+                
+                <div class="category-order-by">
+                    <div class="category-order-by-title">
+                        <span>Ordenar por:</span>
+                    </div>
+                    <div class="category-order-by-dropdown">
+                        <button id="dropSelected">Selecione
+                            <i class="fa fa-angle-down" style="font-size:20px"></i>
+                        </button>
+                        <ul id="optionsOrderBy" style="overflow: hidden; display: none;">
+                            <li>
+                                <button type="button" data-value="OrderByTopSaleDESC">
+                                    Relevancia
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" data-value="OrderByPriceASC">
+                                    Precio: Menor a mayor
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" data-value="OrderByPriceDESC">
+                                    Precio: Mayor a menor
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" data-value="OrderByReleaseDateDESC">
+                                    Nuevo
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- Listado de productos -->                
+            <vtex.cmc:searchResult layout="fb579d9a-fd84-4d0a-a480-7b27355e0b76" itemCount="15"  columnCount="15" />
+            <button id="load-more-products">
+                <div class="">Cargar más</div>   
+            </button>
+            <div id="draft"></div>
+        </div>
+    </div>
+
+    <!--  SubTemplate: Footer -->
+    <vtex:template id="EXP-Footer" />
+    <div>
+        <div id="background-opaco-view" class="background-opaco-view"></div>
+    </div>
+    <vtex:template id="EXP-Scripts" />
+    <script src="/files/EXP-Categoria.js"></script>
+
+</body>
+</html>
