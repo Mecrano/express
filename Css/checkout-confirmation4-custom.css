@@ -1,0 +1,204 @@
+a.cconf-myorders-button.fr.mb2.ml3.w5-ns.w-100.hover-no-underline.dib.link.ba.tc.pv3.ph3.br2.bg-near-white.hover-bg-light-gray.b--light-silver.near-black.hover-near-black.fw4,
+a.cconf-continue-button.fr.mb2.ml3.w5-ns.w-100.hover-no-underline.dib.link.ba.tc.pv3.ph3.br2.bg-near-white.hover-bg-light-gray.b--light-silver.near-black.hover-near-black.fw4 {
+    background-color: #000;
+    color: #fff;
+}
+
+.centro {
+    text-align: center;
+    padding: 1rem 3rem 1.5rem;
+    border-bottom: 0.1rem solid #e1e1e1;
+  }
+  .cart-fixed.cart-fixed-transition.affix-top h2 {
+    color: #000;
+    text-align: left;
+  }
+  
+  .modal-body.default-modal-body.payment-confirmation-modal-body,
+  .cf.br2.pa4.cconf-alert.ba.b--light-silver.bg-washed-green{
+      background: #F2F2F2;
+  }
+  
+  p.sight{
+      font-weight: 600;
+  }
+  
+  a.active,
+  a.active:focus,
+  .accordion-toggle .link-box-edit,
+  p.payment-description,
+  .mini-cart .description,
+  p.sight,
+  .f6.lh-title.mv1-ns a {
+    color: #000;
+  }
+  
+  /*ESTILOS DEL HEADER*/
+  /*ESTILOS DEL FOOTER*/
+  p.input > input {
+    border: 0.5px solid #000;
+    padding: 0.6rem 0.5rem 0.6rem 0.5rem;
+    width: 90%;
+  }
+  
+  input#cart-coupon,
+  input#creditCardpayment-card-0Number,
+  input#creditCardpayment-card-0Name,
+  input#creditCardpayment-card-0Code {
+    border: 0.5px solid #000;
+  }
+  
+  @media (min-width: 767px) {
+    .footer-menu-principal {
+      padding-left: 3rem;
+      padding-right: 8rem;
+    }
+    .cart-template.full-cart.span12.active {
+      display: flex;
+    }
+  
+    .footer-menu-principal {
+      margin-top: 80px;
+    }
+    p.client-first-name.input.pull-left.text.required,
+    p.client-last-name.input.pull-left.text.required,
+    p.client-document.input.pull-left.text.required.mask,
+    p.client-phone.input.pull-left.text.required.mask {
+      width: 40%;
+    }
+    .full-cart .summary-totalizers .info {
+      text-align: left;
+    }
+  }
+  .footer-menu-principal {
+    box-sizing: border-box;
+    display: block;
+    font-family: "express", arial;
+    font-size: 12px;
+    line-height: 18px;
+    padding-bottom: 25px;
+    padding-top: 0px;
+    text-size-adjust: 100%;
+    transition-duration: 0.5s;
+    transition-property: margin-bottom;
+  }
+  .footer-contenido {
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5em;
+    letter-spacing: 0;
+    color: #17171d;
+    display: block;
+    justify-content: flex-start;
+  }
+  .footer-col {
+    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 0;
+    justify-content: space-between;
+  }
+  @media (max-width: 767px) {
+    .footer-col {
+      flex-direction: column;
+    }
+    ul.t-menu {
+      display: flex !important;
+      text-align: center !important;
+      flex-direction: column;
+    }
+    .centro img {
+      width: 65%;
+    }
+  }
+  .footer-inferior {
+    text-align: right;
+  }
+  
+  colum.f-seccion {
+    text-align: center;
+  }
+  ul.social-icon {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+  }
+  li.icon {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    margin-right: 20px;
+  }
+  .mini-header {
+    box-sizing: border-box;
+    color: rgb(23, 23, 29);
+    display: block;
+    font-weight: 600;
+    line-height: 19.5px;
+    letter-spacing: 0.03rem;
+  }
+  ul.t-menu {
+    display: block;
+    text-align: right;
+    padding-top: 1.4rem;
+    list-style: none;
+    margin: auto;
+  }
+  ul.footer-menu {
+    list-style: none;
+    margin-bottom: 0.8rem;
+    padding: 0;
+    font-family: arial, helvetica Neue, helvetica, sans-serif;
+    text-decoration: underline;
+    margin-left: 0.5rem;
+  }
+  ul.mini-menu {
+    margin-bottom: 1.6rem;
+    margin: 0;
+    padding: 0;
+    display: grid;
+  }
+  colum.f-seccion ul.mini-menu {
+    margin-bottom: 15px;
+  }
+  a {
+    color: #696969;
+    text-decoration: none;
+    transition: color 0.1s linear;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    list-style: none;
+    margin-bottom: 0.05rem;
+    cursor: pointer;
+  }
+  hi {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  ul.t-menu hi:after {
+    content: "|";
+    margin-left: 15px;
+  }
+  ul.t-menu hi:last-child:after {
+    content: "";
+  }
+  
+  /*FIN ESTILOS DEL FOOTER*/
+  
+  .registro-alertas {
+    text-align: center;
+  }
+  footer.footer {
+    width: 100%;
+    max-width: 1348px;
+    margin: 0 auto;
+  }
+ 
+.social-enlace {
+    text-align: center;
+}
