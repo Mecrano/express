@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "expsans-bold";
+    src: url("./arquivos/ExpressSans-BoldCond.woff.css") format("woff");
+  }
+  
+  @media only screen and (min-width: 1348px){
+  .row {
+      padding-left: 45px;
+      padding-right: 45px;
+  }
+  }
+  
+  .details-text, .details-text tr, .details-text th, .details-text td {
+      border-collapse: collapse; 
+      border: 1px solid #666;
+  } 
+  .details-text th, .details-text td {
+      padding: 3px 5px;
+  } 
+  .details-text td {
+      padding: 15px 5px;
+  } 
+  .details-text th {
+      background: #000;
+       color: #fff; 
+       text-align:center;
+      } 
+  .details-text tr:nth-child(even) {
+      background: #eee
+  } 
+  .details-text tr:nth-child(odd) {
+      background: #fff
+  } 
+  th.show-for-small, td.show-for-small, 
+  th.show-for-medium, td.show-for-medium { 
+  display: none !important; 
+  } 
+  @media only screen and (max-width: 767px) { 
+  th.show-for-small, td.show-for-small { 
+  display: table-cell !important; 
+  } 
+  } 
+  @media only screen and (min-width: 768px) { 
+  th.show-for-medium, td.show-for-medium { 
+  display: table-cell !important; 
+  } 
+  } 
+  
+  div.service-content h3, div.service-content p strong {
+      color: #000000;
+      font-family: "expsans-bold", Arial;
+      font-size: 1em;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+      padding-top: 5px;
+  }
+  
+  div#custserv-page-contents {
+      padding-left: 45px;
+      padding-right: 45px;
+     max-width: 1620px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  body#home-page {
+      font-size: 14px;
+    font-family: "exp-regular",Arial;
+  }

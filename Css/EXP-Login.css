@@ -1,0 +1,311 @@
+div#vtexIdUI-global-loader {
+    display: none !important;
+  }
+  
+  div#vtexIdContainer {
+    position: relative;
+    z-index: initial;
+  }
+  
+  .vtexIdUI {
+    position: relative !important;
+  }
+  section#login-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: arial, helvetica,sans-serif;
+    font-size: 14px;
+    justify-content: flex-start;
+    position: relative;
+    text-align: left;
+    overflow: hidden;
+    min-height: 50rem;
+  }
+  
+  .Welcome-img {
+    width: 100%;
+    direction: ltr;
+    display: block;
+  }
+  
+  div#vtexIdContainer {
+    width: 66.66%;
+  }
+  
+  span._3KeJM {
+    position: absolute;
+    text-align: center;
+  }
+  
+  .cont-Welcom {
+    width: 33.33%;
+    padding: 14px;
+    /*height:;*/
+    display: block;
+    direction: ltr;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: relative;
+    text-align: left;
+    /*vertical-align: top;*/
+  }
+  
+  div#vtexIdContainer {
+    padding: 14px;
+  }
+  
+  img.img-wc {
+    position: absolute;
+    width: 100%;
+    height: 517px;
+  }
+  
+  span.w-message {
+    align-items: center;
+    direction: ltr;
+    display: flex;
+    flex-direction: column;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    justify-content: center;
+    position: absolute;
+    text-align: left;
+    padding: 60px 20px;
+    width: 421px;
+  }
+  
+  p.w-principal {
+    display: block;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 14px;
+  }
+  
+  p.w-secundario {
+    display: block;
+    margin-bottom: 14px;
+    margin-top: 30px;
+  }
+  .vtexIdUI.ng-scope.vtexIdUI-show-app {
+    width: 500px;
+    box-shadow: none;
+    border: 0;
+  }
+  .vtexIdUI .modal-header {
+    border-bottom: none;
+    padding: 0;
+  }
+  button#loginWithAccessKeyBtn {
+    display: none;
+  }
+  a.dead-link.pull-right {
+    margin-right: 30px;
+  }
+  span.vtexIdUI-heading {
+    font-size: 20px;
+    line-height: 24px;
+    margin-block-end: 7.5px;
+    margin-block-start: 13.2px;
+    margin-bottom: 7.5px;
+    margin-top: 13.2px;
+    color: black;
+    text-shadow: none;
+    background-image: none;
+    background-repeat: repeat-x;
+    border-color: white;;
+  }
+  label.control-label {
+    font-size: 12px;
+    margin: 5px 0;
+    font-weight: 400;
+    color: #696969;
+    line-height: 15.96px;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0;
+  }
+  input#inputEmail, input#inputPassword, input#inputNewPassword, input#inputConfirmNewPassword,input#appendedInputButton {
+    border-radius: 4px;
+    border-color: rgb(118, 118, 118);
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(105, 105, 105);
+    cursor: text;
+    display: inline-block;
+    direction: ltr;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14.95px;
+    margin: 5px 0;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-right: 50px;
+    text-align: start;
+    width: 440px;
+  }
+  button#classicLoginBtn, button#tryChangePswdBtn, button#sendAccessKeyBtn, button#changePswdBtn {
+    min-width: 150px;
+    min-height: 38px;
+    align-items: flex-start;
+    background-color: rgb(213, 214,214);
+    border-color: rgb(213, 214, 214);
+    border-radius: 0;
+    border-width: 1px;
+    border-style: solid;
+    color: rgb(87, 89, 89);
+    cursor: pointer;
+    font-size: 14px;
+    font-family: arial, helvetica,sans-serif;
+    font-weight: 500;
+    line-height: 14px;
+    margin: 14px 120px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 14px;
+    text-align: center;
+    text-decoration-color: rgb(87, 89, 89);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-transform: uppercase;
+    transition-delay: 0s, 0s, 0s;
+    transition-duration: 0.25s, 0.25s, 0.25s;
+    transition-property: background-color, color, border;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+    box-shadow: none;
+    background-image: none;
+    text-shadow:none;
+  }
+  button#classicLoginBtn:hover {
+    color: white;
+    background-color: rgb(87, 89, 89);
+  }
+  button#sendAccessKeyBtn:hover {
+    color: white;
+    background-color: rgb(87, 89, 89);
+  }
+  
+  button#tryChangePswdBtn:hover {
+    color: white;
+    background-color: rgb(87, 89, 89);
+  }
+  button#changePswdBtn:hover {
+    color: white;
+    background-color: rgb(87, 89, 89);
+  }
+  .vtexIdUI .btn {
+    border: none;
+    box-shadow: none;
+    background-image:none;
+    text-shadow:none;
+  }
+  .vtexIdUI {
+    box-shadow: none;
+    border-bottom: none;
+    border-radius: 0;
+    border: 0;
+  }
+  .vtexIdUI .btn-success {
+    display: none;
+    background-image: none;
+    text-shadow:none;
+  }
+  .vtexIdUI .modal-header {
+    background: none;
+    border-bottom: 0;
+  }
+  .vtexIdUI .modal-body {
+    overflow: hidden;
+  }
+  label.control-label[for=inputEmail] {
+    font-size: 0;
+  }
+  label.control-label[for=inputEmail]:before {
+    content: "E-mail";
+    font-size: 14px;
+    color: rgb(105, 105, 105);
+  }
+  .control-group.vtexIdUI-classic-login-control>a.dead-link.pull-right {
+    font-size: 0;
+  }
+  .control-group.vtexIdUI-classic-login-control>a.dead-link.pull-right:before {
+    content: "Regístrate aquí";
+    font-size: 14px;
+  }
+  .vtexIdUI-heading>span {
+      font-size: 0;
+  }
+  
+  .vtexIdUI-heading>span:before {
+      content: 'Elige una de las opciones para confirmar tu identidad';
+      margin: 10px 0;
+      font-family: inherit;
+      font-weight: 200;
+      line-height: 20px;
+      font-size: 16px;
+  }
+  /******* INICIO MOBILE *******/
+  @media(max-width: 1000px) {
+    .cont-Welcom {
+      display: none;
+    }
+    section#login-content {
+      min-height: 0;
+    }
+    div#vtexIdContainer {
+      width: 100%;
+    }
+    .vtexIdUI.ng-scope.vtexIdUI-show-app {
+      width: 100%;
+    }
+    .vtexIdUI {
+      left: 0;
+      margin-left: 0;
+    }
+    .modal-footer {
+      display: inline-grid;
+      width: 100%;
+    }
+    .vtexIdUI.ng-scope.vtexIdUI-show-app {
+      height: 400px !important;
+    }
+  }
+  @media (max-width: 480px){
+    .vtexIdUI {
+      margin-left: 0;
+    }
+  }
+  @media (max-width: 767px) {
+    .vtexIdUI {
+      top: 0;
+      left: 0;
+      margin: 0;
+    }
+    
+    input#inputEmail, input#inputPassword, input#inputNewPassword, input#inputConfirmNewPassword, input#appendedInputButton {
+      max-width: 440px;
+      width: 100%;
+    }
+    
+    .vtexIdUI .modal-footer:before, .vtexIdUI .modal-footer:after {
+      display: none;
+    }
+    
+    .vtexIdUI .modal-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      clear: none;
+    }
+    
+    button#classicLoginBtn, button#tryChangePswdBtn, button#sendAccessKeyBtn, button#changePswdBtn {
+      margin: 0;
+    }
+  }
+  
+  
+  /******* FIN MOBILE *******/

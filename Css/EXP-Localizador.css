@@ -1,0 +1,129 @@
+
+@font-face {
+    font-family: "express-sans-bold";
+    src: url("./arquivos/ES_Bold.woff.css") format("woff");
+  }
+  #map {
+    width: 400px;
+    height: 400px;
+    background-color: grey;
+   
+    
+  }
+  
+  .gm-style-pbc {
+      transition: opacity ease-in-out;
+      background-color: rgba(0,0,0,0.45);
+      text-align: center;
+  }
+  
+  
+  div#locator {
+    display: flex;
+    border-bottom: .0625rem solid #b6b6b6;
+  }
+  
+  div#addresses {
+    width: 70%;
+    display:flex;
+   
+    flex-direction: column;
+    
+  }
+  
+  /*botones tiendas*/
+  .botones-tiendas{
+   flex:1;
+  
+    cursor:pointer;
+  }
+  
+  .contenedor-tiendas:hover{
+        -webkit-box-shadow: 0 0.0625rem 0.25rem 0 rgba(0,0,0,.5);
+        box-shadow: 0 0.0625rem 0.25rem 0 rgba(0,0,0,.5);
+  }
+  .contenedor-tiendas{
+    display:flex;
+    height:100%;
+    margin: 1.6rem 1rem;
+    padding-top:2rem;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  }
+  .LocationName-brand {
+     
+      letter-spacing: .03125rem;
+      font-weight: 700;
+      font-size: 1.4rem;
+      line-height: 1.14;
+      text-transform: uppercase;
+      margin-bottom: .3125rem;
+      top: .9375rem;
+  }
+  
+  
+  
+  .tienda-name{
+       font-size: 2.625rem;
+      line-height: 1.08;
+      letter-spacing: .03125rem;
+      font-weight: 700; 
+  }
+  
+  .contador{
+       font-size: 2.625rem ;
+       font-weight: 700; 
+      position: relative;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      margin-bottom: .625rem;
+      padding-top: 0;
+      padding-bottom: 0;
+    
+  }
+  
+  .horario-text{
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    font-weight: 800; 
+    font-size: 1.3rem;
+        
+  }
+  
+  .direccion{
+     padding-top: 0.1rem;
+    font-size: 1.2rem;
+  }
+  
+  /*contenedor mapa*/
+  .contenedor-mapa{
+     border-left: .125rem solid #b6b6b6;
+  }
+  
+  .locator-legend{
+  
+      align-items: center;
+      padding: .625rem;
+      width: 100%;
+      background-color: #f5f5f5;
+       display: flex;
+      z-index: 3;
+      position: relative;
+      top: 0;
+      left: 0;
+  }
+  
+  .locator-legend svg{
+      margin-right: .625rem;
+      max-width: 100%;
+      max-height: 100%;
+  }
+  
+  .Locator-legendText{
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+            font-weight: bold; 
+      text-transform: uppercase;
+      line-height: .9375rem;
+      margin-top: .3125rem;
+  }

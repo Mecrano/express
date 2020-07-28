@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'Express-Reg';
+    src: url('../arquivos/ES_Reg.woff.css') format('woff');
+}
+@font-face {
+    font-family: 'ExpressSansUltraCond';
+    src: url('../arquivos/ExpressSans-UltraCond.woff.css') format('woff');
+}
+@font-face {
+    font-family: 'ExpressSan-Cond';
+    src: url('../arquivos/ExpressSans-RegCond.woff.css') format('woff');
+}
+@font-face {
+    font-family: 'Express-Bold';
+    src: url('../arquivos/ES_Bold.woff.css') format('woff');
+}
+@font-face {
+    font-family: 'ExpressLight';
+    src: url('../arquivos/ES_Light.woff.css') format('woff');
+}
+@font-face {
+    font-family: 'Express-Med';
+    src: url('../arquivos/ES_Med.woff.css') format('woff');
+}
+@font-face {
+    font-family: 'ExpressSans-Bold';
+    src: url('../arquivos/ExpressSans-Bold.woff2.css') format('woff2');
+}
+@font-face {
+    font-family: 'ExpressSans-Reg';
+    src: url('../arquivos/ExpressSans-Regular.woff2.css') format('woff2');
+}
+@font-face {
+    font-family: 'ExpressSans-Med';
+    src: url('../arquivos/ExpressSans-Medium.woff2.css') format('woff2');
+}
+
+/**banner**/
+img.img-banner {
+    cursor: pointer;
+    direction: ltr;
+    display: block;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 16px;
+    height: 100%;
+    left: 0;
+    letter-spacing: normal;
+    line-height: 24px;
+    list-style-type: none;
+    outline-width: 0px;
+    outline-style: none;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+div#Banner-Principal {
+    padding-bottom: 50px;
+}
+/**categorias**/
+.contenedor-categorias {
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+}
+.links-categorias>a {
+    border-bottom: 2px solid;
+    position: relative;
+    color: rgb(0,0,0);
+    cursor: pointer;
+    direction: ltr;
+    display: inline-block;
+    font-family: "ExpressSans-Med", arial, helvetica, sans-serif;
+    font-size: 14px;
+    height: 18px;
+    letter-spacing: 2px;
+    line-height: 14px;
+    text-align: center;
+    text-decoration-color: rgb(0,0,0);
+    text-transform: uppercase;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    margin-top: 6px;
+
+}
+img.img-categorias {
+    cursor: pointer;
+    direction: ltr;
+    display: block;
+    width: 100%;
+    z-index: 5;
+}
+.imagenes-categorias {
+    width: 16%;
+    text-align: -webkit-center;
+    min-width: 120px;
+}
+.links-categorias {
+    height: 18px;
+    justify-content: center;
+    text-align: center;
+    padding-top:2rem;
+}
+/**colecciones**/
+.contenedor-Coleccion {
+    padding: 100px 40px;
+    height: auto;
+    justify-content: space-between;
+    border-bottom: 1px solid #e1e1e1;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+}
+img.img-Coleccion {
+    width: 100%;
+    display: block;
+}
+.imagenes-Coleccion {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.contenedor-img-Coleccion {
+    width: 50%;
+    margin-right: 20px;
+}
+.contenedor-img-Coleccion:last-child {
+    margin: 0;
+}
+h1 {
+    margin-top: 20px;
+    margin-bottom: 7.5px;
+    color: rgb(0,0,0);
+    direction: ltr;
+    font-family: "ExpressSans-Reg",arial;
+    font-size: 18px;
+    height: auto;
+    letter-spacing: normal;
+    line-height: 18px;
+    width: auto;
+    text-transform: uppercase;
+}
+h5 {
+    border-bottom: 2px solid black;
+    color: black;
+    cursor: pointer;
+    direction: ltr;
+    display: inline-block;
+    font-family: "ExpressSans-Med", arial;
+    font-size: 14px;
+    height: auto;
+    letter-spacing: 2px;
+    line-height: 14px;
+    margin-bottom: 1px;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding-bottom: 2px;
+    position: relative;
+    text-transform: uppercase;
+    margin-top: 11.5px;
+}
+/**leyenda**/
+.departamento-leyenda {
+    padding: 0 45px;
+    color: rgb(51,51,51);
+    display: block;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 16px;
+    height: auto;
+    line-height: 24px;
+    width: 100%;
+    padding-top: 25px;
+}
+br{
+  font-size: 10px;
+}
+.departamento-leyenda>p {
+    color: rgb(0,0,0);
+    direction: ltr;
+    display: block;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 10px;
+    height: auto;
+    line-height: 10px;
+    margin-bottom: 7.5px;
+    text-size-adjust: 100%;
+    margin-top: 0;
+}
+span.titulo-1 {
+    color: rgb(51,51,51);
+    font-family: "ExpressSans-Bold",Arial;
+    font-size: 22px;
+    height: auto;
+    line-height: 22px;
+    text-size-adjust: 100%;
+    width: auto;
+    -webkit-font-smoothing: antialiased;
+    text-transform: capitalize;
+    }
+span.titulo-2 {
+    color: rgb(51,51,51);
+    direction: ltr;
+    font-family: "ExpressSans-Reg",Arial;
+    font-size: 14px;
+    font-weight: 700;
+    height: auto;
+    line-height: 14px;
+    text-size-adjust: 100%;
+    width: auto;
+    -webkit-font-smoothing: antialiased;
+}
+span.content-text {
+    color: rgb(51,51,51);
+    direction: ltr;
+    font-family: "ExpressSans-Reg", arial;
+    font-size: 14px;
+    height: auto;
+    line-height: 14px;
+    text-size-adjust: 100%;
+    width: auto;
+    -webkit-font-smoothing: antialiased;
+}
+/**Mobile**/

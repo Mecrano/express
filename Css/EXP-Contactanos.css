@@ -1,0 +1,249 @@
+@font-face {
+    font-family: 'ExpressSansReg';
+    src: url('../arquivos/ES_Reg.woff.css') format('woff');
+}
+@font-face {
+    font-family: 'ExpressSansUltraCond';
+    src: url('../arquivos/ExpressSans-UltraCond.woff.css') format('woff');
+}
+@font-face {
+    font-family: 'ExpressRegular';
+    src: url('../arquivos/ES_Reg.woff.css') format('woff');
+}
+@font-face {
+    font-family: 'ExpressCond';
+    src: url('../arquivos/ExpressSans-RegCond.woff.css') format('woff');
+}
+@font-face {
+    font-family: 'ExpressBold';
+    src: url('../arquivos/ES_Bold.woff.css') format('woff');
+}
+@font-face {
+    font-family: 'ExpressLight';
+    src: url('../arquivos/ES_Light.woff.css') format('woff');
+}
+@font-face {
+    font-family: 'ExpressMed';
+    src: url('../arquivos/ES_Med.woff.css') format('woff');
+}
+.contacto {
+    direction: ltr;
+    display: block;
+    font-family: 'ExpressRegular', Arial;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    padding-left: 50.5156px;
+    padding-right: 50.5156px;
+}
+.titulo {
+    float: left;
+    display: contents;
+    min-height: 1px;
+    padding-left: 2px;
+    position: relative;
+    width: 1065.13px;
+    height: 65px;
+    -webkit-font-smoothing: antialiased;
+}
+h1 {
+    direction: ltr;
+    display: block;
+    font-family: 'ExpressBold', Arial;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.1px;
+    padding-bottom: 21px;
+    padding-top: 21px;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+}
+.columnas-contacto {
+    display: flex;
+}
+.columna-formulario {
+    display: block;
+    width: 33.33%;
+}
+h2 {
+    color: #000000;
+    font-family: "ExpressBold", Arial;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    margin: 0;
+}
+ul.error-l {
+    padding: 0 3px !important;
+    margin: 0;
+}
+label#error-envio {
+    background: url(https://www.express.com/cdn/static/images/icon-sprite.png) no-repeat -754px -105px;
+    padding-left: 25px;
+    font-family: "exp-medium",Arial;
+    color: #c60f13;
+    margin: 0;
+    line-height: 1.4;
+    font-size: 1.142em;
+    display: block;
+}
+form {
+    padding: 0 3px !important;
+}
+.formulario {
+    padding: 0 0 20px 0;
+}
+h3 {
+    padding: 0 3px !important;
+    display: block;
+    direction: ltr;
+    font-family: 'ExpressReg', Arial;
+    font-size: 14px;
+    font-weight: 400;
+    min-height: 1px;
+    position: relative;
+    margin: 0;
+}
+.option-section {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    width: 353.2px;
+}
+select#contact-subject {
+    padding: 6px;
+    float: left;
+    font-size: 1em;
+    border: 1px solid #bfbfbf;
+    background-color: #f5f5f5;
+    width: 100%;
+}
+option {
+    direction: ltr;
+    display: block;
+    font-family: arial;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 1px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 0px;
+    text-align: start;
+    white-space: pre;
+}
+textarea#contact-message {
+    background-color: rgb(234,234,234);
+    border: rgb(191,191,191);
+    border-style: solid;
+    border-width: 1px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    cursor: text;
+    direction: ltr;
+    display: block;
+    flex-direction: column;
+    font-family: 'ExpressReg', Arial;
+    font-size: 14px;
+    font-weight: 400;
+    height: 154px;
+    padding: 6px;
+    overflow-wrap: break-word;
+    resize: vertical;
+    text-align: start;
+    writing-mode: horizontal-tb;
+}
+input#contact-email-address,input#contact-first-name, input#contact-last-name,input#contact-order-number  {
+    background-color: rgb(234,234,234);
+    border: rgb(191,191,191);
+    border-style: solid;
+    border-width: 1px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    cursor: text;
+    direction: ltr;
+    display: block;
+    flex-direction: column;
+    font-family: 'ExpressReg', Arial;
+    font-size: 14px;
+    font-weight: 400;
+    height: 32px;
+    padding: 6px;
+    overflow-wrap: break-word;
+    resize: vertical;
+    text-align: start;
+    writing-mode: horizontal-tb;
+    border-radius: 0;
+    color:black;
+}
+button {
+    align-items: flex-start;
+    background-color: black;
+    border-color: #0d0d0d;
+    border-radius: 5.6px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    direction: ltr;
+    display: inline-block;
+    font-family: 'ExpressBold', Arial;
+    font-size: 14px;
+    font-stretch: 100%;
+    font-weight: 400;
+    height: 38px;
+    letter-spacing: normal;
+    line-height: 18.2px;
+    padding: 10px 22px 14px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 172.594px;
+}
+label#error-message, label#error-email, label#error-fname, label#error-lname{
+    background: none;
+    color: #e12626;
+    display: inline;
+    padding: 0;
+    font-family: 'ExpressLight', arial;
+    font-size: 12px;
+    font-weight: 400;
+}
+.direcciones {
+    width: 33.33%;
+    display: none;
+}
+label#error-select {
+    background: none;
+    color: #e12626;
+    display: inline;
+    padding: 0;
+    font-family: 'ExpressLight', arial;
+    font-size: 12px;
+    font-weight: 400;
+}
+/******* INICIO MOBILE *******/
+@media(max-width: 1000px){
+    body#contactos-exp {
+        padding: 0;
+    }
+    div.contacto {  
+        padding-left: 2px;
+        padding-right: 0;
+    }
+    .columnas-contacto {
+        display: block;
+    }
+    .columna-formulario {
+        display: block;
+        width: 100%;
+    }  
+    form {
+        padding: 0;
+    }
+    .option-section {
+        width: 99%;
+    }
+}
+/******* FIN MOBILE *******/

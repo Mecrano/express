@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "express";
+    src: url("/arquivos/ES_Reg.woff.css") format("woff");
+  }
+  
+  @font-face {
+    font-family: "ExpressSansUltraCond";
+    src: url("/arquivos/ExpressSans-UltraCond.woff.css") format("woff");
+  }
+  
+  @font-face {
+    font-family: "express-sans-med";
+    src: url("/arquivos/ExpressSans-MedCond.woff.css") format("woff");
+  }
+  
+  @font-face {
+    font-family: "express-sans-reg";
+    src: url("/arquivos/ExpressSans-RegCond.woff.css") format("woff");
+  }
+  @font-face {
+    font-family: "express-sans-reg";
+    src: url("/arquivos/ExpressSans-RegCond.woff.css") format("woff");
+  }
+  
+  @font-face {
+    font-family: "express-sans-bold";
+    src: url("/arquivos/ExpressSans-BoldCond.woff.css") format("woff");
+  }
+  @font-face {
+      font-family: 'ExpressBold';
+      src: url('../arquivos/ES_Bold.woff.css') format('woff');
+  }
+  .menu-inferior {
+      border-bottom: none;
+  }
+  .Contenido-T-C {
+      padding-left: 4%;
+      padding-right: 4%;
+      padding-top: 3rem;
+      max-width: 1620px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .Contenido-T-C p {
+      margin-bottom:0.75em;
+      margin-left: 4rem;
+      font-size: 1.4rem;
+      font-weight: 200;
+  }
+  .Contenido-T-C p>span.Text-T-G {
+    margin-left: -4rem;
+}
+  .Contenido-T-C span.Text-T-G {
+    font-weight: bold;
+    font-size: 2.4rem;
+    font-family: "express", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:#000000;
+  }
+  
+  .Contenido-T-C span {
+      font-family: "express", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+    color: #333;
+  }
+  
+  .Contenido-T-C span.Text-T-N {
+      font-size: 18px;
+      font-weight: bold;
+      color: black;
+  }
+  
+  .Contenido-T-C li {
+      margin-bottom: 5px;
+      margin-left: 4rem;  
+  }
+  
+  
+  .Contenido-T-C span.Text-T-B {
+      font-weight: bold;
+      color: black;
+  }
+  .R-A {
+      margin-bottom: 15px;
+  }
+  .R-A-t {
+      margin-top: 15px;
+  }
+  
+   .Contenido-T-C a {color: #696969;
+      text-decoration: underline;
+      transition: color 0.1s linear;
+      background-color: transparent;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      list-style: none;
+      padding-top: 2rem;
+      margin-bottom: 0.05rem;
+      cursor: pointer;
+   }

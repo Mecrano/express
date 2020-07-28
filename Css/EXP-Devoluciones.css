@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "express";
+    src: url("/arquivos/ES_Reg.woff.css") format("woff");
+  }
+  
+  @font-face {
+    font-family: "ExpressSansUltraCond";
+    src: url("/arquivos/ExpressSans-UltraCond.woff.css") format("woff");
+  }
+  
+  @font-face {
+    font-family: "express-sans-med";
+    src: url("/arquivos/ExpressSans-MedCond.woff.css") format("woff");
+  }
+  
+  @font-face {
+    font-family: "express-sans-reg";
+    src: url("/arquivos/ExpressSans-RegCond.woff.css") format("woff");
+  }
+  @font-face {
+    font-family: "express-sans-reg";
+    src: url("/arquivos/ExpressSans-RegCond.woff.css") format("woff");
+  }
+  
+  @font-face {
+    font-family: "express-sans-bold";
+    src: url("/arquivos/ExpressSans-BoldCond.woff.css") format("woff");
+  }
+  
+  
+  
+  .contenedor-mail-list {
+      padding-left: 4%;
+      padding-right: 4%;
+     padding-top: 3rem;
+      max-width: 1620px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  
+  .contenedor-mail-list p {
+  font-weight: bold;
+  font-size: 2.4rem;
+  font-family: "express", "Helvetica Neue", Helvetica, Arial, sans-serif;   
+  }
+  
+  .contenedor-mail-list span {
+  font-family: "express", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem; 
+  line-height: 1.0;
+        color: #333;
+    
+  }
+  
+  
+  .contenedor-mail-list a {
+      color: #696969;
+      text-decoration: underline;
+      transition: color 0.1s linear;
+      background-color: transparent;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      list-style: none;
+      padding-top: 2rem;
+      margin-bottom: 0.05rem;
+      cursor: pointer;
+  }
+  
+  p.value-seccion {
+      margin-left: 4rem;
+      font-size: 1.4rem;
+      font-weight: 200;
+  }
+  
+  b {
+      font-size: 1.4rem;
+        color: #000;
+      font-weight: bold;
+  }
+  
+  p.value-final {
+      font-size: 1.4rem;
+      font-weight: normal;
+  }

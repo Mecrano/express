@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "express";
+    src: url("/arquivos/ES_Reg.woff.css") format("woff");
+  }
+  
+  @font-face {
+    font-family: "ExpressSansUltraCond";
+    src: url("/arquivos/ExpressSans-UltraCond.woff.css") format("woff");
+  }
+  
+  @font-face {
+    font-family: "express-sans-med";
+    src: url("/arquivos/ExpressSans-MedCond.woff.css") format("woff");
+  }
+  
+  @font-face {
+    font-family: "express-sans-reg";
+    src: url("/arquivos/ExpressSans-RegCond.woff.css") format("woff");
+  }
+  @font-face {
+    font-family: "express-sans-reg";
+    src: url("/arquivos/ExpressSans-RegCond.woff.css") format("woff");
+  }
+  
+  @font-face {
+    font-family: "express-sans-bold";
+    src: url("/arquivos/ExpressSans-BoldCond.woff.css") format("woff");
+  }
+  .Title-covid {
+      border-bottom: 1px solid rgb(182 189 189);
+      padding: 20px 4%;
+      right: 0;
+      left: 0;
+  }
+  .content-Covid {
+      padding: 0 6%;
+  }
+  p.Intro-covid{
+      font-weight: bold !important;
+      font-size: 24px !important;
+      font-family: "express", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+      margin: 10px 0 !important;
+  }
+  
+   b {
+      font-size: 18px;
+      color: #000;
+      font-weight: bold;
+      font-family: "express", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      letter-spacing: 0.8px;
+  }
+  
+  .content-Covid p, .Title-covid p {
+      font-size: 14px;
+      color: #000;
+      font-weight: 400;
+      font-family: "express", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      letter-spacing: 0.1px;
+      line-height: 1.0;
+  }
+  
+  p.value-seccion {
+      margin: 10px 0;
+  }
+  
+  span {
+      font-size: 14px;
+      color: #000;
+      font-weight: 400;
+      font-family: "express", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      letter-spacing: 0.1px;
+  }
+  .centro {
+      margin-bottom: 18px;
+  }
+  .izquierda>p {
+     display:none;
+  }
+  .Title-covid p {
+      margin-top:10px;
+      margin-bottom:0px;
+  }
